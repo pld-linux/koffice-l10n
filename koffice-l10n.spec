@@ -2,7 +2,7 @@ Summary:	KOffice suite - international support
 Summary(pl):	KOffice - wsparcie dla wielu jêzyków
 Name:		koffice-i18n
 Version:	1.3.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/%{name}-%{version}.tar.bz2
@@ -933,6 +933,9 @@ FindLang() {
     fi
 }
 
+# rename ven -> ve
+mv -f $RPM_BUILD_ROOT%{_datadir}/locale/ve{n,}
+
 ziew="example \
 graphite \
 kdatabase \
@@ -1012,15 +1015,13 @@ FindLang th Thai
 FindLang tr Turkish
 ##FindLang uk Ukrainian
 ##FindLang uz Uzbek
-FindLang ven Venda
+FindLang ve Venda
 ##FindLang vi Vietnamese
 # FindLang wa Walloon
 FindLang xh Xhosa
 FindLang zh_CN Simplified_Chinese
 FindLang zh_TW Chinese
 FindLang zu Zulu
-
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
