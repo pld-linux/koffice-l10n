@@ -933,6 +933,21 @@ FindLang() {
     fi
 }
 
+ziew="example \
+graphite \
+kdatabase \
+kdgantt \
+kexi \
+kformdesigner \
+kontour \
+kplato"
+
+for i in $ziew ;
+do 
+	rm -rf `find $RPM_BUILD_ROOT -name ${i}\*\.mo`
+	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/${i}
+done
+
 FindLang af Afrikaans
 ##FindLang ar Arabic
 ##FindLang az Azerbaijani
@@ -1003,6 +1018,8 @@ FindLang xh Xhosa
 FindLang zh_CN Simplified_Chinese
 FindLang zh_TW Chinese
 FindLang zu Zulu
+
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT
