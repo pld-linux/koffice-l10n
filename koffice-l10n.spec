@@ -940,7 +940,8 @@ kdgantt \
 kexi \
 kformdesigner \
 kontour \
-kplato"
+kplato \
+krita"
 
 for i in $ziew ;
 do 
