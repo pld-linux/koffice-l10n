@@ -26,15 +26,15 @@ Summary:	Empty metapackage to handle obsoletes
 Summary(pl):	Pusty metapakiet z obsoletes
 Group:		X11/Applications
 Requires:	kde-i18n-base
-Obsoletes:      koffice-common-i18n
-Obsoletes:      koffice-karbon-i18n
-Obsoletes:      koffice-kchart-i18n
-Obsoletes:      koffice-kformula-i18n
-Obsoletes:      koffice-kivio-i18n
-Obsoletes:      koffice-kpresenter-i18n
-Obsoletes:      koffice-kspread-i18n
-Obsoletes:      koffice-kugar-i18n
-Obsoletes:      koffice-kword-i18n
+Obsoletes:	koffice-common-i18n
+Obsoletes:	koffice-karbon-i18n
+Obsoletes:	koffice-kchart-i18n
+Obsoletes:	koffice-kformula-i18n
+Obsoletes:	koffice-kivio-i18n
+Obsoletes:	koffice-kpresenter-i18n
+Obsoletes:	koffice-kspread-i18n
+Obsoletes:	koffice-kugar-i18n
+Obsoletes:	koffice-kword-i18n
 
 %description base
 Empty metapackage to handle obsoletes.
@@ -858,7 +858,7 @@ KOffice suite - Zulu language support.
 %description Zulu -l pl
 KOffice - wsparcie dla jêzyka zuluskiego.
 %prep
-%setup -q 
+%setup -q
 
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
@@ -867,7 +867,7 @@ LDFLAGS="%{rpmldflags}"
 
 ##%{__make} -f admin/Makefile.common cvs
 
-%configure 
+%configure
 %{__make} \
 	RPM_OPT_FLAGS="%{rpmcflags}"
 
@@ -975,71 +975,110 @@ FindLang zu Zulu
 rm -rf $RPM_BUILD_ROOT
 
 %files -f Afrikaans.lang Afrikaans
+%defattr(644,root,root,755)
 #%%files -f Arabic.lang Arabic
 ##%files -f Azerbaijani.lang Azerbaijani
 %files -f Bulgarian.lang Bulgarian
+%defattr(644,root,root,755)
 # %files -f Breton.lang Breton
 ##%files -f Bosnian.lang Bosnian
 %files -f Catalan.lang Catalan
+%defattr(644,root,root,755)
 %files -f Czech.lang Czech
+%defattr(644,root,root,755)
 ##%files -f Cymraeg.lang Cymraeg
 %files -f Danish.lang Danish
+%defattr(644,root,root,755)
 %files -f German.lang German
+%defattr(644,root,root,755)
 %files -f Greek.lang Greek
+%defattr(644,root,root,755)
 # %files -f English.lang English
 %files -f English_UK.lang English_UK
+%defattr(644,root,root,755)
 %files -f Esperanto.lang Esperanto
+%defattr(644,root,root,755)
 %files -f Spanish.lang Spanish
+%defattr(644,root,root,755)
 %files -f Estonian.lang Estonian
+%defattr(644,root,root,755)
 ##%files -f Basque.lang Basque
 %files -f Farsi.lang Farsi
+%defattr(644,root,root,755)
 %files -f Finnish.lang Finnish
+%defattr(644,root,root,755)
 %files -f French.lang French
+%defattr(644,root,root,755)
 # %files -f Irish.lang Irish
 ##%files -f Galician.lang Galician
 ##%files -f Hindi.lang Hindi
 %files -f Hebrew.lang Hebrew
+%defattr(644,root,root,755)
 #%%files -f Croatian.lang Croatian
 %files -f Hungarian.lang Hungarian
+%defattr(644,root,root,755)
 ##%files -f Indonesian.lang Indonesian
 #%%files -f Icelandic.lang Icelandic
 %files -f Italian.lang Italian
+%defattr(644,root,root,755)
 %files -f Japanese.lang Japanese
+%defattr(644,root,root,755)
 ##%files -f Korean.lang Korean
 %files -f Lao.lang Lao
+%defattr(644,root,root,755)
 #%%files -f Lithuanian.lang Lithuanian
 ##%files -f Latvian.lang Latvian
 %files -f Maltese.lang Maltese
+%defattr(644,root,root,755)
 ##%files -f Malay.lang Malay
 ##%files -f Mongolian.lang Mongolian
 # %files -f Maori.lang Maori
 #%%files -f Macedonian.lang Macedonian
 %files -f Dutch.lang Dutch
+%defattr(644,root,root,755)
 %files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
+%defattr(644,root,root,755)
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
+%defattr(644,root,root,755)
 #%%files -f Northern_Sotho.lang Northern_Sotho
 # %files -f Gascon_occitan.lang Gascon_occitan
 %files -f Polish.lang Polish
+%defattr(644,root,root,755)
 #%%{_datadir}/services/searchproviders/*.desktop
 %files -f Portuguese.lang Portuguese
+%defattr(644,root,root,755)
 %files -f Brazil_Portuguese.lang Brazil_Portuguese
+%defattr(644,root,root,755)
 ##%files -f Romanian.lang Romanian
 %files -f Russian.lang Russian
+%defattr(644,root,root,755)
 %files -f Northern_Sami.lang Northern_Sami
+%defattr(644,root,root,755)
 #%%files -f Swati.lang Swati
 %files -f Slovak.lang Slovak
+%defattr(644,root,root,755)
 %files -f Slovenian.lang Slovenian
+%defattr(644,root,root,755)
 %files -f Serbian.lang Serbian
+%defattr(644,root,root,755)
 %files -f Swedish.lang Swedish
+%defattr(644,root,root,755)
 ##%files -f Tamil.lang Tamil
 %files -f Thai.lang Thai
+%defattr(644,root,root,755)
 %files -f Turkish.lang Turkish
+%defattr(644,root,root,755)
 ##%files -f Ukrainian.lang Ukrainian
 ##%files -f Uzbek.lang Uzbek
 %files -f Venda.lang Venda
+%defattr(644,root,root,755)
 #%%files -f Vietnamese.lang Vietnamese
 # %files -f Walloon.lang Walloon
 %files -f Xhosa.lang Xhosa
+%defattr(644,root,root,755)
 %files -f Simplified_Chinese.lang Simplified_Chinese
+%defattr(644,root,root,755)
 %files -f Chinese.lang Chinese
+%defattr(644,root,root,755)
 %files -f Zulu.lang Zulu
+%defattr(644,root,root,755)
