@@ -1,8 +1,8 @@
 Summary:	KOffice suite - international support
 Summary(pl):	KOffice - wsparcie dla wielu jêzyków
 Name:		koffice-i18n
-Version:	1.3
-Release:	3
+Version:	1.3.4
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{name}-%{version}/src/%{name}-%{version}.tar.bz2
@@ -973,7 +973,7 @@ FindLang lo Lao
 ##FindLang mn Mongolian
 ##FindLang ms Malay
 FindLang mt Maltese
-#FindLang nb Norwegian_Bokmaal
+FindLang nb Norwegian_Bokmaal
 FindLang nl Dutch
 FindLang nn Norwegian_Nynorsk
 #indLang nso Northern_Sotho
@@ -1075,8 +1075,8 @@ rm -rf $RPM_BUILD_ROOT
 #%%files -f Macedonian.lang Macedonian
 %files -f Dutch.lang Dutch
 %defattr(644,root,root,755)
-##%files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
-##%defattr(644,root,root,755)
+%files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
+%defattr(644,root,root,755)
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
 %defattr(644,root,root,755)
 #%%files -f Northern_Sotho.lang Northern_Sotho
