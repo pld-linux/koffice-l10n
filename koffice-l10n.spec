@@ -944,7 +944,7 @@ kplato \
 krita"
 
 for i in $ziew ;
-do 
+do
 	rm -rf `find $RPM_BUILD_ROOT -name ${i}\*\.mo`
 	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/${i}
 done
