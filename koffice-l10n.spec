@@ -366,6 +366,18 @@ KOffice suite - Hungarian language support.
 %description Hungarian -l pl
 KOffice - wsparcie dla jêzyka wêgierskiego.
 
+%package Upper_Sorbian
+Summary:	KOffice suite - Upper Sorbian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka górno³u¿yckiego
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Upper_Sorbian
+KOffice suite - Upper Sorbian language support.
+
+%description Upper_Sorbian  -l pl
+KOffice - wsparcie dla jêzyka górno³u¿yckiego.
+
 %package Indonesian
 Summary:	KOffice suite - Indonesian language support
 Summary(pl):	KOffice - wsparcie dla jêzyka indonezyjskiego
@@ -726,6 +738,18 @@ KOffice suite - Tamil language support.
 %description Tamil -l pl
 KOffice - wsparcie dla jêzyka tamilskiego.
 
+%package Tajik
+Summary:	KOffice - Tajik language support
+Summary(pl):	KOffice - wsparcie dla jêzyka tad¿yckiego
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Tajik
+KOffice - Tajik language support.
+
+%description Tajik -l pl
+KOffice - wsparcie dla jêzyka tad¿yckiego.
+
 %package Thai
 Summary:	KOffice suite - Thai language support
 Summary(pl):	KOffice - wsparcie dla jêzyka tajlandzkiego
@@ -863,21 +887,27 @@ KOffice - wsparcie dla jêzyka zuluskiego.
 
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
+kde_libs_htmldir="%{_kdedocdir}"; export kde_libs_htmldir
 
 LDFLAGS="%{rpmldflags}"
+#export UNSERMAKE=%{_datadir}/unsermake/unsermake
 
-##%{__make} -f admin/Makefile.common cvs
+%{__make} -f admin/Makefile.common cvs
 
-%configure 
+%configure
 %{__make} \
-	RPM_OPT_FLAGS="%{rpmcflags}"
+	RPM_OPT_FLAGS="%{rpmcflags}" \
+	kde_htmldir="%{_kdedocdir}" \
+	kde_libs_htmldir="%{_kdedocdir}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+rm -rf *.lang
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	kde_htmldir=%{_kdedocdir}
+	kde_htmldir="%{_kdedocdir}" \
+	kde_libs_htmldir="%{_kdedocdir}"
 
 FindLang() {
 #    $1 - short language name
@@ -906,11 +936,11 @@ FindLang af Afrikaans
 ##FindLang ar Arabic
 ##FindLang az Azerbaijani
 FindLang bg Bulgarian
-# FindLang br Breton
+FindLang br Breton
 ##FindLang bs Bosnian
 FindLang ca Catalan
 FindLang cs Czech
-##FindLang cy Cymraeg
+FindLang cy Cymraeg
 FindLang da Danish
 FindLang de German
 FindLang el Greek
@@ -926,6 +956,7 @@ FindLang fr French
 # FindLang ga Irish
 ##FindLang gl Galician
 FindLang he Hebrew
+FindLang hsb Upper_Sorbian
 ##FindLang hi Hindi
 ##FindLang hr Croatian
 FindLang hu Hungarian
@@ -942,7 +973,7 @@ FindLang lo Lao
 ##FindLang mn Mongolian
 ##FindLang ms Malay
 FindLang mt Maltese
-FindLang nb Norwegian_Bokmaal
+#FindLang nb Norwegian_Bokmaal
 FindLang nl Dutch
 FindLang nn Norwegian_Nynorsk
 #indLang nso Northern_Sotho
@@ -959,6 +990,7 @@ FindLang sl Slovenian
 FindLang sr Serbian
 FindLang sv Swedish
 ##FindLang ta Tamil
+FindLang tg Tajik
 FindLang th Thai
 FindLang tr Turkish
 ##FindLang uk Ukrainian
@@ -983,13 +1015,15 @@ rm -rf $RPM_BUILD_ROOT
 ##%files -f Azerbaijani.lang Azerbaijani
 %files -f Bulgarian.lang Bulgarian
 %defattr(644,root,root,755)
-# %files -f Breton.lang Breton
+%files -f Breton.lang Breton
+%defattr(644,root,root,755)
 ##%files -f Bosnian.lang Bosnian
 %files -f Catalan.lang Catalan
 %defattr(644,root,root,755)
 %files -f Czech.lang Czech
 %defattr(644,root,root,755)
-##%files -f Cymraeg.lang Cymraeg
+%files -f Cymraeg.lang Cymraeg
+%defattr(644,root,root,755)
 %files -f Danish.lang Danish
 %defattr(644,root,root,755)
 %files -f German.lang German
@@ -1017,6 +1051,8 @@ rm -rf $RPM_BUILD_ROOT
 ##%files -f Hindi.lang Hindi
 %files -f Hebrew.lang Hebrew
 %defattr(644,root,root,755)
+%files -f Upper_Sorbian.lang Upper_Sorbian
+%defattr(644,root,root,755)
 #%%files -f Croatian.lang Croatian
 %files -f Hungarian.lang Hungarian
 %defattr(644,root,root,755)
@@ -1039,8 +1075,8 @@ rm -rf $RPM_BUILD_ROOT
 #%%files -f Macedonian.lang Macedonian
 %files -f Dutch.lang Dutch
 %defattr(644,root,root,755)
-%files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
-%defattr(644,root,root,755)
+##%files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
+##%defattr(644,root,root,755)
 %files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
 %defattr(644,root,root,755)
 #%%files -f Northern_Sotho.lang Northern_Sotho
@@ -1067,6 +1103,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Swedish.lang Swedish
 %defattr(644,root,root,755)
 ##%files -f Tamil.lang Tamil
+%files -f Tajik.lang Tajik
+%defattr(644,root,root,755)
 %files -f Thai.lang Thai
 %defattr(644,root,root,755)
 %files -f Turkish.lang Turkish
