@@ -5,8 +5,9 @@ Version:	1.3.4
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	ftp://ftp.kde.org/pub/kde/stable/%{name}-%{version}/src/%{name}-%{version}.tar.bz2
-# Source0-md5:	ca89c9c944508de11ca2908eb0a851e4
+Source0:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/%{name}-%{version}.tar.bz2
+# Source0-md5:	6455f496f6031e810398ad6b065eb929
+# Source0-size:	27798685
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs-devel >= 9:3.2
