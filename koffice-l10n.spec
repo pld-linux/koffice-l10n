@@ -2,7 +2,7 @@ Summary:	KOffice suite - international support
 Summary(pl):	KOffice - wsparcie dla wielu jêzyków
 Name:		koffice-i18n
 Version:	1.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{name}-%{version}/src/%{name}-%{version}.tar.bz2
@@ -973,6 +973,8 @@ FindLang zu Zulu
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%files base
 
 %files -f Afrikaans.lang Afrikaans
 %defattr(644,root,root,755)
