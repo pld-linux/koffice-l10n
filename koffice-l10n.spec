@@ -2,7 +2,7 @@ Summary:	KOffice suite - international support
 Summary(pl):	KOffice - wsparcie dla wielu jêzyków
 Name:		koffice-i18n
 Version:	1.3
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{name}-%{version}/src/%{name}-%{version}.tar.bz2
@@ -868,7 +868,7 @@ LDFLAGS="%{rpmldflags}"
 
 ##%{__make} -f admin/Makefile.common cvs
 
-%configure
+%configure 
 %{__make} \
 	RPM_OPT_FLAGS="%{rpmcflags}"
 
