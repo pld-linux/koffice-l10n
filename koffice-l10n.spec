@@ -1,11 +1,11 @@
-Summary:	K Desktop Environment - international support
-Summary(pl):	KDE - wsparcie dla wielu jêzyków
-Name:		koffice
+Summary:	KOffice suite - international support
+Summary(pl):	KOffice - wsparcie dla wielu jêzyków
+Name:		koffice-i18n
 Version:	1.3
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	ftp://ftp.kde.org/pub/kde/stable/%{name}-%{version}/src/%{name}-i18n-%{version}.tar.bz2
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{name}-%{version}/src/%{name}-%{version}.tar.bz2
 # Source0-md5:	ca89c9c944508de11ca2908eb0a851e4
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
@@ -16,778 +16,867 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-K Desktop Environment - international support.
+KOffice suite - international support.
 
 %description -l pl
-KDE - wsparcie dla wielu jêzyków.
+KOffice - wsparcie dla wielu jêzyków.
+
+%package base
+Summary:	Empty metapackage to handle obsoletes
+Summary(pl):	Pusty metapakiet z obsoletes
+Group:		X11/Applications
+Requires:	kde-i18n-base
+Obsoletes:      koffice-common-i18n
+Obsoletes:      koffice-karbon-i18n
+Obsoletes:      koffice-kchart-i18n
+Obsoletes:      koffice-kformula-i18n
+Obsoletes:      koffice-kivio-i18n
+Obsoletes:      koffice-kpresenter-i18n
+Obsoletes:      koffice-kspread-i18n
+Obsoletes:      koffice-kugar-i18n
+Obsoletes:      koffice-kword-i18n
+
+%description base
+Empty metapackage to handle obsoletes.
+
+%description base -l pl
+Pusty metapakiet z obsoletes.
 
 %package Afrikaans
-Summary:	K Desktop Environment - Afrikaans language support
-Summary(pl):	KDE - wsparcie dla jêzyka afrykanerskiego
+Summary:	KOffice suite - Afrikaans language support
+Summary(pl):	KOffice - wsparcie dla jêzyka afrykanerskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Afrikaans
-K Desktop Environment - Afrikaans language support.
+KOffice suite - Afrikaans language support.
 
 %description Afrikaans -l pl
-KDE - wsparcie dla jêzyka afrykanerskiego.
+KOffice - wsparcie dla jêzyka afrykanerskiego.
 
 %package Arabic
-Summary:	K Desktop Environment - Arabic language support
-Summary(pl):	KDE - wsparcie dla jêzyka arabskiego
+Summary:	KOffice suite - Arabic language support
+Summary(pl):	KOffice - wsparcie dla jêzyka arabskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Arabic
-K Desktop Environment - Arabic language support.
+KOffice suite - Arabic language support.
 
 %description Arabic -l pl
-KDE - wsparcie dla jêzyka arabskiego.
+KOffice - wsparcie dla jêzyka arabskiego.
 
 %package Azerbaijani
-Summary:	K Desktop Environment - Azerbaijani language support
-Summary(pl):	KDE - wsparcie dla jêzyka azerskiego
+Summary:	KOffice suite - Azerbaijani language support
+Summary(pl):	KOffice - wsparcie dla jêzyka azerskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Azerbaijani
-K Desktop Environment - Azerbaijani language support.
+KOffice suite - Azerbaijani language support.
 
 %description Azerbaijani -l pl
-KDE - wsparcie dla jêzyka azerskiego.
+KOffice - wsparcie dla jêzyka azerskiego.
 
 %package Bulgarian
-Summary:	K Desktop Environment - Bulgarian language support
-Summary(pl):	KDE - wsparcie dla jêzyka bu³garskiego
+Summary:	KOffice suite - Bulgarian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka bu³garskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Bulgarian
-K Desktop Environment - Bulgarian language support.
+KOffice suite - Bulgarian language support.
 
 %description Bulgarian -l pl
-KDE - wsparcie dla jêzyka bu³garskiego.
+KOffice - wsparcie dla jêzyka bu³garskiego.
 
 %package Breton
-Summary:	K Desktop Environment - Breton language support
-Summary(pl):	KDE - wsparcie dla jêzyka bretoñskiego
+Summary:	KOffice suite - Breton language support
+Summary(pl):	KOffice - wsparcie dla jêzyka bretoñskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Breton
-K Desktop Environment - Breton language support.
+KOffice suite - Breton language support.
 
 %description Breton -l pl
-KDE - wsparcie dla jêzyka bretoñskiego.
+KOffice - wsparcie dla jêzyka bretoñskiego.
 
 %package Bosnian
-Summary:	K Desktop Environment - Bosnian language support
-Summary(pl):	KDE - wsparcie dla jêzyka bo¶niañskiego
+Summary:	KOffice suite - Bosnian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka bo¶niañskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Bosnian
-K Desktop Environment - Bosnian language support.
+KOffice suite - Bosnian language support.
 
 %description Bosnian -l pl
-KDE - wsparcie dla jêzyka bo¶niañskiego.
+KOffice - wsparcie dla jêzyka bo¶niañskiego.
 
 %package Catalan
-Summary:	K Desktop Environment - Catalan language support
-Summary(pl):	KDE - wsparcie dla jêzyka kataloñskiego
+Summary:	KOffice suite - Catalan language support
+Summary(pl):	KOffice - wsparcie dla jêzyka kataloñskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Catalan
-K Desktop Environment - Catalan language support.
+KOffice suite - Catalan language support.
 
 %description Catalan -l pl
-KDE - wsparcie dla jêzyka kataloñskiego.
+KOffice - wsparcie dla jêzyka kataloñskiego.
 
 %package Czech
-Summary:	K Desktop Environment - Czech language support
-Summary(pl):	KDE - wsparcie dla jêzyka czeskiego
+Summary:	KOffice suite - Czech language support
+Summary(pl):	KOffice - wsparcie dla jêzyka czeskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Czech
-K Desktop Environment - Czech language support.
+KOffice suite - Czech language support.
 
 %description Czech -l pl
-KDE - wsparcie dla jêzyka czeskiego.
+KOffice - wsparcie dla jêzyka czeskiego.
 
 %package Cymraeg
-Summary:	K Desktop Environment - Cymraeg language support
-Summary(pl):	KDE - wsparcie dla jêzyka walijskiego
+Summary:	KOffice suite - Cymraeg language support
+Summary(pl):	KOffice - wsparcie dla jêzyka walijskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Cymraeg
-K Desktop Environment - Cymraeg language support.
+KOffice suite - Cymraeg language support.
 
 %description Cymraeg -l pl
-KDE - wsparcie dla jêzyka walijskiego.
+KOffice - wsparcie dla jêzyka walijskiego.
 
 %package Danish
-Summary:	K Desktop Environment - Danish language support
-Summary(pl):	KDE - wsparcie dla jêzyka duñskiego
+Summary:	KOffice suite - Danish language support
+Summary(pl):	KOffice - wsparcie dla jêzyka duñskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Danish
-K Desktop Environment - Danish language support.
+KOffice suite - Danish language support.
 
 %description Danish -l pl
-KDE - wsparcie dla jêzyka duñskiego.
+KOffice - wsparcie dla jêzyka duñskiego.
 
 %package German
-Summary:	K Desktop Environment - German language support
-Summary(pl):	KDE - wsparcie dla jêzyka niemieckiego
+Summary:	KOffice suite - German language support
+Summary(pl):	KOffice - wsparcie dla jêzyka niemieckiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description German
-K Desktop Environment - German language support.
+KOffice suite - German language support.
 
 %description German -l pl
-KDE - wsparcie dla jêzyka niemieckiego.
+KOffice - wsparcie dla jêzyka niemieckiego.
 
 %package Greek
-Summary:	K Desktop Environment - Greek language support
-Summary(pl):	KDE - wsparcie dla jêzyka greckiego
+Summary:	KOffice suite - Greek language support
+Summary(pl):	KOffice - wsparcie dla jêzyka greckiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Greek
-K Desktop Environment - Greek language support.
+KOffice suite - Greek language support.
 
 %description Greek -l pl
-KDE - wsparcie dla jêzyka greckiego.
+KOffice - wsparcie dla jêzyka greckiego.
 
 %package English
-Summary:	K Desktop Environment - English language support
-Summary(pl):	KDE - wsparcie dla jêzyka angielskiego
+Summary:	KOffice suite - English language support
+Summary(pl):	KOffice - wsparcie dla jêzyka angielskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description English
-K Desktop Environment - English language support.
+KOffice suite - English language support.
 
 %description English -l pl
-KDE - wsparcie dla jêzyka angielskiego.
+KOffice - wsparcie dla jêzyka angielskiego.
 
 %package English_UK
-Summary:	K Desktop Environment - K Desktop Environment - English (UK) language support
-Summary(pl):	KDE - wsparcie dla jêzyka angielskiego (odmiany brytyjskiej)
+Summary:	KOffice suite - KOffice suite - English (UK) language support
+Summary(pl):	KOffice - wsparcie dla jêzyka angielskiego (odmiany brytyjskiej)
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description English_UK
-K Desktop Environment - English (UK) language support.
+KOffice suite - English (UK) language support.
 
 %description English_UK -l pl
-KDE - wsparcie dla jêzyka angielskiego (odmiany brytyjskiej).
+KOffice - wsparcie dla jêzyka angielskiego (odmiany brytyjskiej).
 
 %package Esperanto
-Summary:	K Desktop Environment - Esperanto language support
-Summary(pl):	KDE - wsparcie dla jêzyka esperanto
+Summary:	KOffice suite - Esperanto language support
+Summary(pl):	KOffice - wsparcie dla jêzyka esperanto
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Esperanto
-K Desktop Environment - Esperanto language support.
+KOffice suite - Esperanto language support.
 
 %description Esperanto -l pl
-KDE - wsparcie dla jêzyka esperanto.
+KOffice - wsparcie dla jêzyka esperanto.
 
 %package Spanish
-Summary:	K Desktop Environment - Spanish language support
-Summary(pl):	KDE - wsparcie dla jêzyka hiszpañskiego
+Summary:	KOffice suite - Spanish language support
+Summary(pl):	KOffice - wsparcie dla jêzyka hiszpañskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Spanish
-K Desktop Environment - Spanish language support.
+KOffice suite - Spanish language support.
 
 %description Spanish -l pl
-KDE - wsparcie dla jêzyka hiszpañskiego.
+KOffice - wsparcie dla jêzyka hiszpañskiego.
 
 %package Estonian
-Summary:	K Desktop Environment - Estonian language support
-Summary(pl):	KDE - wsparcie dla jêzyka estoñskiego
+Summary:	KOffice suite - Estonian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka estoñskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Estonian
-K Desktop Environment - Estonian language support.
+KOffice suite - Estonian language support.
 
 %description Estonian -l pl
-KDE - wsparcie dla jêzyka estoñskiego.
+KOffice - wsparcie dla jêzyka estoñskiego.
 
 %package Basque
-Summary:	K Desktop Environment - Basque language support
-Summary(pl):	KDE - wsparcie dla jêzyka baskijskiego
+Summary:	KOffice suite - Basque language support
+Summary(pl):	KOffice - wsparcie dla jêzyka baskijskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Basque
-K Desktop Environment - Basque language support.
+KOffice suite - Basque language support.
 
 %description Basque -l pl
-KDE - wsparcie dla jêzyka baskijskiego.
+KOffice - wsparcie dla jêzyka baskijskiego.
 
 %package Farsi
-Summary:	K Desktop Environment - Farsi language support
-Summary(pl):	KDE - wsparcie dla jêzyka perskiego (farsi)
+Summary:	KOffice suite - Farsi language support
+Summary(pl):	KOffice - wsparcie dla jêzyka perskiego (farsi)
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Farsi
-K Desktop Environment - Farsi language support.
+KOffice suite - Farsi language support.
 
 %description Farsi -l pl
-KDE - wsparcie dla jêzyka perskiego (farsi).
+KOffice - wsparcie dla jêzyka perskiego (farsi).
 
 
 %package Finnish
-Summary:	K Desktop Environment - Finnish language support
-Summary(pl):	KDE - wsparcie dla jêzyka fiñskiego
+Summary:	KOffice suite - Finnish language support
+Summary(pl):	KOffice - wsparcie dla jêzyka fiñskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Finnish
-K Desktop Environment - Finnish language support.
+KOffice suite - Finnish language support.
 
 %description Finnish -l pl
-KDE - wsparcie dla jêzyka fiñskiego.
+KOffice - wsparcie dla jêzyka fiñskiego.
 
 %package French
-Summary:	K Desktop Environment - French language support
-Summary(pl):	KDE - wsparcie dla jêzyka francuskiego
+Summary:	KOffice suite - French language support
+Summary(pl):	KOffice - wsparcie dla jêzyka francuskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description French
-K Desktop Environment - French language support.
+KOffice suite - French language support.
 
 %description French -l pl
-KDE - wsparcie dla jêzyka francuskiego.
+KOffice - wsparcie dla jêzyka francuskiego.
 
 %package Irish
-Summary:	K Desktop Environment - Irish language support
-Summary(pl):	KDE - wsparcie dla jêzyka irlandzkiego
+Summary:	KOffice suite - Irish language support
+Summary(pl):	KOffice - wsparcie dla jêzyka irlandzkiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Irish
-K Desktop Environment - Irish language support.
+KOffice suite - Irish language support.
 
 %description Irish -l pl
-KDE - wsparcie dla jêzyka irlandzkiego.
+KOffice - wsparcie dla jêzyka irlandzkiego.
 
 %package Galician
-Summary:	K Desktop Environment - Galician language support
-Summary(pl):	KDE - wsparcie dla jêzyka galicyjskiego
+Summary:	KOffice suite - Galician language support
+Summary(pl):	KOffice - wsparcie dla jêzyka galicyjskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Galician
-K Desktop Environment - Galician language support.
+KOffice suite - Galician language support.
 
 %description Galician -l pl
-KDE - wsparcie dla jêzyka galijskiego.
+KOffice - wsparcie dla jêzyka galijskiego.
 
 %package Hindi
-Summary:	K Desktop Environment - Hindi language support
-Summary(pl):	KDE - wsparcie dla jêzyka hindi
+Summary:	KOffice suite - Hindi language support
+Summary(pl):	KOffice - wsparcie dla jêzyka hindi
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Hindi
-K Desktop Environment - Hindi language support.
+KOffice suite - Hindi language support.
 
 %description Hindi -l pl
-KDE - wsparcie dla jêzyka hindi.
+KOffice - wsparcie dla jêzyka hindi.
 
 %package Hebrew
-Summary:	K Desktop Environment - Hebrew language support
-Summary(pl):	KDE - wsparcie dla jêzyka hebrajskiego
+Summary:	KOffice suite - Hebrew language support
+Summary(pl):	KOffice - wsparcie dla jêzyka hebrajskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Hebrew
-K Desktop Environment - Hebrew language support.
+KOffice suite - Hebrew language support.
 
 %description Hebrew -l pl
-KDE - wsparcie dla jêzyka hebrajskiego.
+KOffice - wsparcie dla jêzyka hebrajskiego.
 
 %package Croatian
-Summary:	K Desktop Environment - Croatian language support
-Summary(pl):	KDE - wsparcie dla jêzyka chorwackiego
+Summary:	KOffice suite - Croatian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka chorwackiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Croatian
-K Desktop Environment - Croatian language support.
+KOffice suite - Croatian language support.
 
 %description Croatian -l pl
-KDE - wsparcie dla jêzyka chorwackiego.
+KOffice - wsparcie dla jêzyka chorwackiego.
 
 %package Hungarian
-Summary:	K Desktop Environment - Hungarian language support
-Summary(pl):	KDE - wsparcie dla jêzyka wêgierskiego
+Summary:	KOffice suite - Hungarian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka wêgierskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Hungarian
-K Desktop Environment - Hungarian language support.
+KOffice suite - Hungarian language support.
 
 %description Hungarian -l pl
-KDE - wsparcie dla jêzyka wêgierskiego.
+KOffice - wsparcie dla jêzyka wêgierskiego.
 
 %package Indonesian
-Summary:	K Desktop Environment - Indonesian language support
-Summary(pl):	KDE - wsparcie dla jêzyka indonezyjskiego
+Summary:	KOffice suite - Indonesian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka indonezyjskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Indonesian
-K Desktop Environment - Indonesian language support.
+KOffice suite - Indonesian language support.
 
 %description Indonesian -l pl
-KDE - wsparcie dla jêzyka indonezyjskiego.
+KOffice - wsparcie dla jêzyka indonezyjskiego.
 
 %package Icelandic
-Summary:	K Desktop Environment - Icelandic language support
-Summary(pl):	KDE - wsparcie dla jêzyka islandzkiego
+Summary:	KOffice suite - Icelandic language support
+Summary(pl):	KOffice - wsparcie dla jêzyka islandzkiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Icelandic
-K Desktop Environment - Icelandic language support.
+KOffice suite - Icelandic language support.
 
 %description Icelandic -l pl
-KDE - wsparcie dla jêzyka islandzkiego.
+KOffice - wsparcie dla jêzyka islandzkiego.
 
 %package Italian
-Summary:	K Desktop Environment - Italian language support
-Summary(pl):	KDE - wsparcie dla jêzyka w³oskiego
+Summary:	KOffice suite - Italian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka w³oskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Italian
-K Desktop Environment - Italian language support.
+KOffice suite - Italian language support.
 
 %description Italian -l pl
-KDE - wsparcie dla jêzyka w³oskiego.
+KOffice - wsparcie dla jêzyka w³oskiego.
 
 %package Japanese
-Summary:	K Desktop Environment - Japanese language support
-Summary(pl):	KDE - wsparcie dla jêzyka japoñskiego
+Summary:	KOffice suite - Japanese language support
+Summary(pl):	KOffice - wsparcie dla jêzyka japoñskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Japanese
-K Desktop Environment - Japanese language support.
+KOffice suite - Japanese language support.
 
 %description Japanese -l pl
-KDE - wsparcie dla jêzyka japoñskiego.
+KOffice - wsparcie dla jêzyka japoñskiego.
 
 %package Korean
-Summary:	K Desktop Environment - Korean language support
-Summary(pl):	KDE - wsparcie dla jêzyka koreañskiego
+Summary:	KOffice suite - Korean language support
+Summary(pl):	KOffice - wsparcie dla jêzyka koreañskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Korean
-K Desktop Environment - Korean language support.
+KOffice suite - Korean language support.
 
 %description Korean -l pl
-KDE - wsparcie dla jêzyka koreañskiego.
+KOffice - wsparcie dla jêzyka koreañskiego.
 
 %package Lithuanian
-Summary:	K Desktop Environment - Lithuanian language support
-Summary(pl):	KDE - wsparcie dla jêzyka litewskiego
+Summary:	KOffice suite - Lithuanian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka litewskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Lithuanian
-K Desktop Environment - Lithuanian language support.
+KOffice suite - Lithuanian language support.
 
 %description Lithuanian -l pl
-KDE - Wsparcie dla jêzyka litewskiego.
+KOffice - Wsparcie dla jêzyka litewskiego.
 
 %package Lao
-Summary:	K Desktop Environment - Lao language support
-Summary(pl):	KDE - wsparcie dla jêzyka lao
+Summary:	KOffice suite - Lao language support
+Summary(pl):	KOffice - wsparcie dla jêzyka lao
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Lao
-K Desktop Environment - lao language support.
+KOffice suite - lao language support.
 
 %description Lao -l pl
-KDE - wsparcie dla jêzyka lao.
+KOffice - wsparcie dla jêzyka lao.
 
 %package Latvian
-Summary:	K Desktop Environment - Latvian language support
-Summary(pl):	KDE - wsparcie dla jêzyka ³otewskiego
+Summary:	KOffice suite - Latvian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka ³otewskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Latvian
-K Desktop Environment - Latvian language support.
+KOffice suite - Latvian language support.
 
 %description Latvian -l pl
-KDE - wsparcie dla jêzyka ³otewskiego.
+KOffice - wsparcie dla jêzyka ³otewskiego.
 
 %package Maori
-Summary:	K Desktop Environment - Maori language support
-Summary(pl):	KDE - wsparcie dla jêzyka maoryjskiego
+Summary:	KOffice suite - Maori language support
+Summary(pl):	KOffice - wsparcie dla jêzyka maoryjskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Maori
-K Desktop Environment - Maori language support.
+KOffice suite - Maori language support.
 
 %description Maori -l pl
-KDE - wsparcie dla jêzyka maoryjskiego.
+KOffice - wsparcie dla jêzyka maoryjskiego.
 
 %package Macedonian
-Summary:	K Desktop Environment - Macedonian language support
-Summary(pl):	KDE - wsparcie dla jêzyka macedoñskiego
+Summary:	KOffice suite - Macedonian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka macedoñskiego
 Group:		X11/Applications
 
 %description Macedonian
-K Desktop Environment - Macedonian language support.
+KOffice suite - Macedonian language support.
 
 %description Macedonian -l pl
-KDE - wsparcie dla jêzyka macedoñskiego.
+KOffice - wsparcie dla jêzyka macedoñskiego.
 
 %package Malay
-Summary:	K Desktop Environment - Malay language support
-Summary(pl):	KDE - wsparcie dla jêzyka malajskiego
+Summary:	KOffice suite - Malay language support
+Summary(pl):	KOffice - wsparcie dla jêzyka malajskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Malay
-K Desktop Environment - Malay language support.
+KOffice suite - Malay language support.
 
 %description Malay -l pl
-KDE - wsparcie dla jêzyka malajskiego.
+KOffice - wsparcie dla jêzyka malajskiego.
 
 %package Maltese
-Summary:	K Desktop Environment - Maltese language support
-Summary(pl):	KDE - wsparcie dla jêzyka maltañskiego
+Summary:	KOffice suite - Maltese language support
+Summary(pl):	KOffice - wsparcie dla jêzyka maltañskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Maltese
-K Desktop Environment - Maltese language support.
+KOffice suite - Maltese language support.
 
 %description Maltese -l pl
-KDE - wsparcie dla jêzyka maltañskiego.
+KOffice - wsparcie dla jêzyka maltañskiego.
 
 %package Mongolian
-Summary:	K Desktop Environment - Mongolian language support
-Summary(pl):	KDE - wsparcie dla jêzyka mongolskiego
+Summary:	KOffice suite - Mongolian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka mongolskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Mongolian
-K Desktop Environment - Mongolian language support.
+KOffice suite - Mongolian language support.
 
 %description Mongolian -l pl
-KDE - wsparcie dla jêzyka maltañskiego.
+KOffice - wsparcie dla jêzyka maltañskiego.
 
 %package Dutch
-Summary:	K Desktop Environment - Dutch language support
-Summary(pl):	KDE - wsparcie dla jêzyka holenderskiego
+Summary:	KOffice suite - Dutch language support
+Summary(pl):	KOffice - wsparcie dla jêzyka holenderskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Dutch
-K Desktop Environment - Dutch language support.
+KOffice suite - Dutch language support.
 
 %description Dutch -l pl
-KDE - wsparcie dla jêzyka holenderskiego.
+KOffice - wsparcie dla jêzyka holenderskiego.
 
 %package Norwegian_Bokmaal
-Summary:	K Desktop Environment - Norwegian (Bokmaal) language support
-Summary(pl):	KDE - wsparcie dla jêzyka norweskiego (odmiany bokmaal)
+Summary:	KOffice suite - Norwegian (Bokmaal) language support
+Summary(pl):	KOffice - wsparcie dla jêzyka norweskiego (odmiany bokmaal)
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Norwegian_Bokmaal
-K Desktop Environment - Norwegian (Bokmaal) language support.
+KOffice suite - Norwegian (Bokmaal) language support.
 
 %description Norwegian_Bokmaal -l pl
-KDE - wsparcie dla jêzyka norweskiego (odmiany bokmaal).
+KOffice - wsparcie dla jêzyka norweskiego (odmiany bokmaal).
 
 %package Norwegian_Nynorsk
-Summary:	K Desktop Environment - Norwegian (Nynorsk) language support
-Summary(pl):	KDE - wsparcie dla jêzyka norweskiego (odmiany nynorsk)
+Summary:	KOffice suite - Norwegian (Nynorsk) language support
+Summary(pl):	KOffice - wsparcie dla jêzyka norweskiego (odmiany nynorsk)
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Norwegian_Nynorsk
-K Desktop Environment - Norwegian (Nynorsk) language support.
+KOffice suite - Norwegian (Nynorsk) language support.
 
 %description Norwegian_Nynorsk -l pl
-KDE - wsparcie dla jêzyka norweskiego (odmiany nynorsk).
+KOffice - wsparcie dla jêzyka norweskiego (odmiany nynorsk).
 
 %package Northern_Sotho
-Summary:	K Desktop Environment - Northern Sotho language support
-Summary(pl):	KDE - wsparcie dla pó³nocnej odmiany jêzyka ludu Soto
+Summary:	KOffice suite - Northern Sotho language support
+Summary(pl):	KOffice - wsparcie dla pó³nocnej odmiany jêzyka ludu Soto
 Group:		X11/Applications
 
 %description Northern_Sotho
-K Desktop Environment - Northern Sotho language support.
+KOffice suite - Northern Sotho language support.
 
 %description Northern_Sotho -l pl
-KDE - wsparcie dla pó³nocnej odmiany jêzyka ludu Soto.
+KOffice - wsparcie dla pó³nocnej odmiany jêzyka ludu Soto.
 
 %package Gascon_occitan
-Summary:	K Desktop Environment - Occitan (Gascon) language support
-Summary(pl):	KDE - wsparcie dla jêzyka oksytañskiego (dialektu gaskoñskiego)
+Summary:	KOffice suite - Occitan (Gascon) language support
+Summary(pl):	KOffice - wsparcie dla jêzyka oksytañskiego (dialektu gaskoñskiego)
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Gascon_occitan
-K Desktop Environment - Occitan (Gascon) language support.
+KOffice suite - Occitan (Gascon) language support.
 
 %description Gascon_occitan -l pl
-KDE - wsparcie dla jêzyka oksytañskiego (dialektu gaskoñskiego).
+KOffice - wsparcie dla jêzyka oksytañskiego (dialektu gaskoñskiego).
 
 %package Polish
-Summary:	K Desktop Environment - Polish language support
-Summary(pl):	KDE - wsparcie dla jêzyka polskiego
+Summary:	KOffice suite - Polish language support
+Summary(pl):	KOffice - wsparcie dla jêzyka polskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Polish
-K Desktop Environment - Polish language support.
+KOffice suite - Polish language support.
 
 %description Polish -l pl
-KDE - wsparcie dla jêzyka polskiego.
+KOffice - wsparcie dla jêzyka polskiego.
 
 %package Portuguese
-Summary:	K Desktop Environment - Portuguese language support
-Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego
+Summary:	KOffice suite - Portuguese language support
+Summary(pl):	KOffice - wsparcie dla jêzyka portugalskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Portuguese
-K Desktop Environment - Portuguese language support.
+KOffice suite - Portuguese language support.
 
 %description Portuguese -l pl
-KDE - wsparcie dla jêzyka portugalskiego.
+KOffice - wsparcie dla jêzyka portugalskiego.
 
 %package Brazil_Portuguese
-Summary:	K Desktop Environment - Portuguese (Brazil) language support
-Summary(pl):	KDE - wsparcie dla jêzyka portugalskiego (odmiany brazylijskiej)
+Summary:	KOffice suite - Portuguese (Brazil) language support
+Summary(pl):	KOffice - wsparcie dla jêzyka portugalskiego (odmiany brazylijskiej)
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Brazil_Portuguese
-K Desktop Environment - Portuguese (Brazil) language support.
+KOffice suite - Portuguese (Brazil) language support.
 
 %description Brazil_Portuguese -l pl
-KDE - wsparcie dla jêzyka portugalskiego (odmiany brazylijskiej).
+KOffice - wsparcie dla jêzyka portugalskiego (odmiany brazylijskiej).
 
 %package Romanian
-Summary:	K Desktop Environment - Romanian language support
-Summary(pl):	KDE - wsparcie dla jêzyka rumuñskiego
+Summary:	KOffice suite - Romanian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka rumuñskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Romanian
-K Desktop Environment - Romanian language support.
+KOffice suite - Romanian language support.
 
 %description Romanian -l pl
-KDE - wsparcie dla jêzyka rumuñskiego.
+KOffice - wsparcie dla jêzyka rumuñskiego.
 
 %package Russian
-Summary:	K Desktop Environment - Russian language support
-Summary(pl):	KDE - wsparcie dla jêzyka rosyjskiego
+Summary:	KOffice suite - Russian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka rosyjskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Russian
-K Desktop Environment - Russian language support.
+KOffice suite - Russian language support.
 
 %description Russian -l pl
-KDE - wsparcie dla jêzyka rosyjskiego.
+KOffice - wsparcie dla jêzyka rosyjskiego.
 
 %package Swati
-Summary:	K Desktop Environment - Swati language support
-Summary(pl):	KDE - wsparcie dla jêzyka swati
+Summary:	KOffice suite - Swati language support
+Summary(pl):	KOffice - wsparcie dla jêzyka swati
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Swati
-K Desktop Environment - Swati language support.
+KOffice suite - Swati language support.
 
 %description Swati -l pl
-KDE - wsparcie dla jêzyka swati.
+KOffice - wsparcie dla jêzyka swati.
 
 %package Northern_Sami
-Summary:	K Desktop Environment - Northern Sami language support
-Summary(pl):	KDE - wsparcie dla pó³nocnego jêzyka saami (lapoñskiego)
+Summary:	KOffice suite - Northern Sami language support
+Summary(pl):	KOffice - wsparcie dla pó³nocnego jêzyka saami (lapoñskiego)
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Northern_Sami
-K Desktop Environment - Northern Sami language support.
+KOffice suite - Northern Sami language support.
 
 %description Northern_Sami -l pl
-KDE - wsparcie dla pó³nocnego jêzyka saami (lapoñskiego).
+KOffice - wsparcie dla pó³nocnego jêzyka saami (lapoñskiego).
 
 %package Slovak
-Summary:	K Desktop Environment - Slovak language support
-Summary(pl):	KDE - wsparcie dla jêzyka s³owackiego
+Summary:	KOffice suite - Slovak language support
+Summary(pl):	KOffice - wsparcie dla jêzyka s³owackiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Slovak
-K Desktop Environment - Slovak language support.
+KOffice suite - Slovak language support.
 
 %description Slovak -l pl
-KDE - wsparcie dla jêzyka s³owackiego.
+KOffice - wsparcie dla jêzyka s³owackiego.
 
 %package Slovenian
-Summary:	K Desktop Environment - Slovenian language support
-Summary(pl):	KDE - wsparcie dla jêzyka s³oweñskiego
+Summary:	KOffice suite - Slovenian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka s³oweñskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Slovenian
-K Desktop Environment - Slovenian language support.
+KOffice suite - Slovenian language support.
 
 %description Slovenian -l pl
-KDE - wsparcie dla jêzyka s³oweñskiego.
+KOffice - wsparcie dla jêzyka s³oweñskiego.
 
 %package Serbian
-Summary:	K Desktop Environment - Serbian language support
-Summary(pl):	KDE - wsparcie dla jêzyka serbskiego
+Summary:	KOffice suite - Serbian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka serbskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Serbian
-K Desktop Environment - Serbian language support.
+KOffice suite - Serbian language support.
 
 %description Serbian -l pl
-KDE - wsparcie dla jêzyka serbskiego.
+KOffice - wsparcie dla jêzyka serbskiego.
 
 %package Swedish
-Summary:	K Desktop Environment - Swedish language support
-Summary(pl):	KDE - wsparcie dla jêzyka szwedzkiego
+Summary:	KOffice suite - Swedish language support
+Summary(pl):	KOffice - wsparcie dla jêzyka szwedzkiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Swedish
-K Desktop Environment - Swedish language support.
+KOffice suite - Swedish language support.
 
 %description Swedish -l pl
-KDE - wsparcie dla jêzyka szwedzkiego.
+KOffice - wsparcie dla jêzyka szwedzkiego.
 
 %package Tamil
-Summary:	K Desktop Environment - Tamil language support
-Summary(pl):	KDE - wsparcie dla jêzyka tamilskiego
+Summary:	KOffice suite - Tamil language support
+Summary(pl):	KOffice - wsparcie dla jêzyka tamilskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Tamil
-K Desktop Environment - Tamil language support.
+KOffice suite - Tamil language support.
 
 %description Tamil -l pl
-KDE - wsparcie dla jêzyka tamilskiego.
+KOffice - wsparcie dla jêzyka tamilskiego.
 
 %package Thai
-Summary:	K Desktop Environment - Thai language support
-Summary(pl):	KDE - wsparcie dla jêzyka tajlandzkiego
+Summary:	KOffice suite - Thai language support
+Summary(pl):	KOffice - wsparcie dla jêzyka tajlandzkiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Thai
-K Desktop Environment - Thai language support.
+KOffice suite - Thai language support.
 
 %description Thai -l pl
-KDE - wsparcie dla jêzyka tajlandzkiego.
+KOffice - wsparcie dla jêzyka tajlandzkiego.
 
 %package Turkish
-Summary:	K Desktop Environment - Turkish language support
-Summary(pl):	KDE - wsparcie dla jêzyka tureckiego
+Summary:	KOffice suite - Turkish language support
+Summary(pl):	KOffice - wsparcie dla jêzyka tureckiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Turkish
-K Desktop Environment - Turkish language support.
+KOffice suite - Turkish language support.
 
 %description Turkish -l pl
-KDE - wsparcie dla jêzyka tureckiego.
+KOffice - wsparcie dla jêzyka tureckiego.
 
 %package Ukrainian
-Summary:	K Desktop Environment - Ukrainian language support
-Summary(pl):	KDE - wsparcie dla jêzyka ukraiñskiego
+Summary:	KOffice suite - Ukrainian language support
+Summary(pl):	KOffice - wsparcie dla jêzyka ukraiñskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Ukrainian
-K Desktop Environment - Ukrainian language support.
+KOffice suite - Ukrainian language support.
 
 %description Ukrainian -l pl
-KDE - wsparcie dla jêzyka ukraiñskiego.
+KOffice - wsparcie dla jêzyka ukraiñskiego.
 
 %package Uzbek
-Summary:	K Desktop Environment - Uzbek language support
-Summary(pl):	KDE - wsparcie dla jêzyka uzbeckiego
+Summary:	KOffice suite - Uzbek language support
+Summary(pl):	KOffice - wsparcie dla jêzyka uzbeckiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Uzbek
-K Desktop Environment - Uzbek language support.
+KOffice suite - Uzbek language support.
 
 %description Uzbek -l pl
-KDE - wsparcie dla jêzyka uzbeckiego.
+KOffice - wsparcie dla jêzyka uzbeckiego.
 
 
 %package Venda
-Summary:	K Desktop Environment - Venda language support
-Summary(pl):	KDE - wsparcie dla jêzyka venda
+Summary:	KOffice suite - Venda language support
+Summary(pl):	KOffice - wsparcie dla jêzyka venda
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Venda
-K Desktop Environment - Venda language support.
+KOffice suite - Venda language support.
 
 %description Venda -l pl
-KDE - wsparcie dla jêzyka venda.
+KOffice - wsparcie dla jêzyka venda.
 
 %package Vietnamese
-Summary:	K Desktop Environment - Vietnamese language support
-Summary(pl):	KDE - wsparcie dla jêzyka wietnamskiego
+Summary:	KOffice suite - Vietnamese language support
+Summary(pl):	KOffice - wsparcie dla jêzyka wietnamskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Vietnamese
-K Desktop Environment - Vietnamese language support.
+KOffice suite - Vietnamese language support.
 
 %description Vietnamese -l pl
-KDE - wsparcie dla jêzyka wietnamskiego.
+KOffice - wsparcie dla jêzyka wietnamskiego.
 
 %package Walloon
-Summary:	K Desktop Environment - Walloon language support
-Summary(pl):	KDE - wsparcie dla jêzyka waloñskiego
+Summary:	KOffice suite - Walloon language support
+Summary(pl):	KOffice - wsparcie dla jêzyka waloñskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Walloon
-K Desktop Environment - Walloon language support.
+KOffice suite - Walloon language support.
 
 %description Walloon -l pl
-KDE - wsparcie dla jêzyka waloñskiego.
+KOffice - wsparcie dla jêzyka waloñskiego.
 
 %package Xhosa
-Summary:	K Desktop Environment - Xhosa language support
-Summary(pl):	KDE - wsparcie dla jêzyka khosa
+Summary:	KOffice suite - Xhosa language support
+Summary(pl):	KOffice - wsparcie dla jêzyka khosa
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Xhosa
-K Desktop Environment - Xhosa language support.
+KOffice suite - Xhosa language support.
 
 %description Xhosa -l pl
-KDE - wsparcie dla jêzyka khosa.
+KOffice - wsparcie dla jêzyka khosa.
 
 %package Simplified_Chinese
-Summary:	K Desktop Environment - simplified Chinese language support
-Summary(pl):	KDE - wsparcie dla uproszczonego jêzyka chiñskiego
+Summary:	KOffice suite - simplified Chinese language support
+Summary(pl):	KOffice - wsparcie dla uproszczonego jêzyka chiñskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Simplified_Chinese
-K Desktop Environment - simplified Chinese language support.
+KOffice suite - simplified Chinese language support.
 
 %description Simplified_Chinese -l pl
-KDE - wsparcie dla uproszczonego jêzyka chiñskiego.
+KOffice - wsparcie dla uproszczonego jêzyka chiñskiego.
 
 %package Chinese
-Summary:	K Desktop Environment - Chinese language support
-Summary(pl):	KDE - wsparcie dla jêzyka chiñskiego
+Summary:	KOffice suite - Chinese language support
+Summary(pl):	KOffice - wsparcie dla jêzyka chiñskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Chinese
-K Desktop Environment - Chinese language support.
+KOffice suite - Chinese language support.
 
 %description Chinese -l pl
-KDE - wsparcie dla jêzyka chiñskiego.
+KOffice - wsparcie dla jêzyka chiñskiego.
 
 %package Zulu
-Summary:	K Desktop Environment - Zulu language support
-Summary(pl):	KDE - wsparcie dla jêzyka zuluskiego
+Summary:	KOffice suite - Zulu language support
+Summary(pl):	KOffice - wsparcie dla jêzyka zuluskiego
 Group:		X11/Applications
+Requires:	%{name}-base
 
 %description Zulu
-K Desktop Environment - Zulu language support.
+KOffice suite - Zulu language support.
 
 %description Zulu -l pl
-KDE - wsparcie dla jêzyka zuluskiego.
-
+KOffice - wsparcie dla jêzyka zuluskiego.
 %prep
-%setup -q
-%patch0 -p1
+%setup -q 
 
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
 
 LDFLAGS="%{rpmldflags}"
 
-%{__make} -f admin/Makefile.common cvs
+##%{__make} -f admin/Makefile.common cvs
 
-%configure
+%configure 
 %{__make} \
 	RPM_OPT_FLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT \
+	kde_htmldir=%{_kdedocdir}
+
 
 FindLang() {
 #    $1 - short language name
@@ -800,14 +889,18 @@ FindLang() {
 	echo "%lang($1) %{_kdedocdir}/$1" >> "$2.lang"
     fi
 
+# share/locale/(%%lang)
+    if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$1" ]; then
+#       echo "%lang($1) %{_datadir}/locale/$1/[cef]*" >> "$2.lang"
+       echo "%lang($1) %{_datadir}/locale/$1/LC_MESSAGES/*.mo" >> "$2.lang"
+    fi
+
+# share/apps/koffice/autocorrect/*.xml
+    if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/${1}.xml" ]; then
+        echo "%lang($1) %{_datadir}/apps/koffice/autocorrect/${1}.xml" >> "$2.lang"
+    fi
 }
 
-%{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	kde_htmldir=%{_kdedocdir}
-
-
-lo
 
 FindLang af Afrikaans
 ##FindLang ar Arabic
@@ -842,6 +935,7 @@ FindLang it Italian
 FindLang ja Japanese
 ## FindLang ko Korean
 ##FindLang lt Lithuanian
+FindLang lo Lao
 ## FindLang lv Latvian
 # FindLang mi Maori
 ##FindLang mk Macedonian
@@ -880,43 +974,44 @@ FindLang zu Zulu
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-#%%files -f Afrikaans.lang Afrikaans
+%files -f Afrikaans.lang Afrikaans
 #%%files -f Arabic.lang Arabic
-%files -f Azerbaijani.lang Azerbaijani
+##%files -f Azerbaijani.lang Azerbaijani
 %files -f Bulgarian.lang Bulgarian
 # %files -f Breton.lang Breton
-%files -f Bosnian.lang Bosnian
+##%files -f Bosnian.lang Bosnian
 %files -f Catalan.lang Catalan
 %files -f Czech.lang Czech
-%files -f Cymraeg.lang Cymraeg
+##%files -f Cymraeg.lang Cymraeg
 %files -f Danish.lang Danish
 %files -f German.lang German
 %files -f Greek.lang Greek
 # %files -f English.lang English
 %files -f English_UK.lang English_UK
-#%%files -f Esperanto.lang Esperanto
+%files -f Esperanto.lang Esperanto
 %files -f Spanish.lang Spanish
 %files -f Estonian.lang Estonian
-%files -f Basque.lang Basque
+##%files -f Basque.lang Basque
 %files -f Farsi.lang Farsi
 %files -f Finnish.lang Finnish
 %files -f French.lang French
 # %files -f Irish.lang Irish
-%files -f Galician.lang Galician
-%files -f Hindi.lang Hindi
+##%files -f Galician.lang Galician
+##%files -f Hindi.lang Hindi
 %files -f Hebrew.lang Hebrew
 #%%files -f Croatian.lang Croatian
 %files -f Hungarian.lang Hungarian
 ##%files -f Indonesian.lang Indonesian
 #%%files -f Icelandic.lang Icelandic
 %files -f Italian.lang Italian
-#%%files -f Japanese.lang Japanese
+%files -f Japanese.lang Japanese
 ##%files -f Korean.lang Korean
+%files -f Lao.lang Lao
 #%%files -f Lithuanian.lang Lithuanian
 ##%files -f Latvian.lang Latvian
-#%%files -f Maltese.lang Maltese
-%files -f Malay.lang Malay
-%files -f Mongolian.lang Mongolian
+%files -f Maltese.lang Maltese
+##%files -f Malay.lang Malay
+##%files -f Mongolian.lang Mongolian
 # %files -f Maori.lang Maori
 #%%files -f Macedonian.lang Macedonian
 %files -f Dutch.lang Dutch
@@ -928,7 +1023,7 @@ rm -rf $RPM_BUILD_ROOT
 #%%{_datadir}/services/searchproviders/*.desktop
 %files -f Portuguese.lang Portuguese
 %files -f Brazil_Portuguese.lang Brazil_Portuguese
-%files -f Romanian.lang Romanian
+##%files -f Romanian.lang Romanian
 %files -f Russian.lang Russian
 %files -f Northern_Sami.lang Northern_Sami
 #%%files -f Swati.lang Swati
@@ -936,16 +1031,15 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Slovenian.lang Slovenian
 %files -f Serbian.lang Serbian
 %files -f Swedish.lang Swedish
-%files -f Tamil.lang Tamil
-#%%files -f Thai.lang Thai
+##%files -f Tamil.lang Tamil
+%files -f Thai.lang Thai
 %files -f Turkish.lang Turkish
-%files -f Ukrainian.lang Ukrainian
-%files -f Uzbek.lang Uzbek
-#%%files -f Venda.lang Venda
+##%files -f Ukrainian.lang Ukrainian
+##%files -f Uzbek.lang Uzbek
+%files -f Venda.lang Venda
 #%%files -f Vietnamese.lang Vietnamese
 # %files -f Walloon.lang Walloon
-#%%files -f Xhosa.lang Xhosa
+%files -f Xhosa.lang Xhosa
 %files -f Simplified_Chinese.lang Simplified_Chinese
 %files -f Chinese.lang Chinese
-#%%files -f Zulu.lang Zulu
-%endif
+%files -f Zulu.lang Zulu
