@@ -11,6 +11,7 @@ BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs-devel >= 9:3.2
 BuildRequires:	libxml2-progs >= 2.4.2
+BuildRequires:	rpmbuild(macros) >= 1.129
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
