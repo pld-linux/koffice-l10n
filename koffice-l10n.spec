@@ -4,66 +4,66 @@
 Summary:	KOffice suite - international support
 Summary(pl):	KOffice - wsparcie dla wielu jêzyków
 Name:		koffice-l10n
-Version:	1.4.1
+Version:	1.4.2
 Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-bg-%{version}.tar.bz2
-# Source0-md5:	445f35bf43b60c7799df116bd90957ad
+# Source0-md5:	ad980947860046ca4d5e0c8b23b7d3ab
 Source1:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ca-%{version}.tar.bz2
-# Source1-md5:	f011aa527e4b476f18f1fda9a043f81b
+# Source1-md5:	8a546eec2897af073bb564edf7150b6d
 Source2:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-cs-%{version}.tar.bz2
-# Source2-md5:	8b56e381765bece8a32fec3b67e881c2
+# Source2-md5:	58e6c355e478ab459e6f0a5c86662f36
 Source3:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-cy-%{version}.tar.bz2
-# Source3-md5:	e15377d70faef67a91a361b421b8be84
+# Source3-md5:	ed0c069797a89680d49bd396f80e94e1
 Source4:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-da-%{version}.tar.bz2
-# Source4-md5:	3bcda6ccf32a2b0916f5de47981be655
+# Source4-md5:	f6c3b0afcb299519f0663aa5a3ff3362
 Source5:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-de-%{version}.tar.bz2
-# Source5-md5:	b54a04db280a5b00f0105407c24ce49c
+# Source5-md5:	2659e56e079bfdd133833a39497f80e6
 Source6:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-el-%{version}.tar.bz2
-# Source6-md5:	a744de5d6e97a25257a809f7a0f79a11
+# Source6-md5:	1aa341393b7ade4037ddeed77c73cacf
 Source7:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-en_GB-%{version}.tar.bz2
-# Source7-md5:	deaaf836cce7efcd9c83d800a6b4e51b
+# Source7-md5:	caf59bd82ac94ccbeaa4b907c218defa
 Source8:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-es-%{version}.tar.bz2
-# Source8-md5:	3872dfdfb6b12532218daf8f61f94282
+# Source8-md5:	0f429120c8b27d1208f020a353aeb88d
 Source9:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-et-%{version}.tar.bz2
-# Source9-md5:	0ecd275357b76d245b2367a1925bda59
+# Source9-md5:	1ac8201573602a69e7d00b3332cb3bec
 Source10:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-fi-%{version}.tar.bz2
-# Source10-md5:	a2e26094907dc77365266c215183c587
+# Source10-md5:	b4925a3bd6db8b6b787b0313e3695371
 Source11:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-fr-%{version}.tar.bz2
-# Source11-md5:	37a18640975a8a1ba38044a6ea7dbd37
+# Source11-md5:	5f4e1d1f360a14e4ca2d24d2d85bf061
 Source12:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-hu-%{version}.tar.bz2
-# Source12-md5:	95e046ab8097fda8b4f146b4a625b7a3
+# Source12-md5:	ba83bf5a84f1ae5e7b22c1611c89e8bd
 Source13:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-it-%{version}.tar.bz2
-# Source13-md5:	cac43b60ea3d01cfa0ac337bc0a296be
+# Source13-md5:	62609f289dc1ed216c7d075045159a04
 Source14:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-nb-%{version}.tar.bz2
-# Source14-md5:	0d9c12a3881861377130801a3a431dd2
+# Source14-md5:	9d8c327b3e6567d90258cec8b0694a2c
 Source15:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-nl-%{version}.tar.bz2
-# Source15-md5:	a960e30b5bd883ed71ada339f238bb38
+# Source15-md5:	6328a285565add97cd55413e52541050
 Source16:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-nn-%{version}.tar.bz2
-# Source16-md5:	7e55ada0f26bc0125ae26ab7c7b1eae2
+# Source16-md5:	2e52095b2c9c879e101d274888d49fcc
 Source17:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-pl-%{version}.tar.bz2
-# Source17-md5:	c6c38ec4a42d2c2abd289b83e2398c21
+# Source17-md5:	78337154a7183cda46d34f80c6bf23e5
 Source18:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-pt-%{version}.tar.bz2
-# Source18-md5:	af2c79e0694d913a749a9591598641c5
+# Source18-md5:	61e11d48f788275389f0b75e75b8de2b
 Source19:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-pt_BR-%{version}.tar.bz2
-# Source19-md5:	96f2a0ba7a249078e64ea319b8f27dc9
+# Source19-md5:	a559487f91f9bdf7eaf608f5d88c67c1
 Source20:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ru-%{version}.tar.bz2
-# Source20-md5:	d198b6cc3574ea9305701a48324085bb
+# Source20-md5:	a1527f53ed16ceed8c295614eedf7deb
 Source21:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sl-%{version}.tar.bz2
-# Source21-md5:	3c27784f5630ca6f3b0cfbae89271176
+# Source21-md5:	6d85c8b3f84b892471fd3cadd00aba37
 Source22:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sr-%{version}.tar.bz2
-# Source22-md5:	f49d2141aa8bd2c68f0ab892cdc4e1a8
+# Source22-md5:	97d0fa5fdb458bbe5c8ef5317e15ed5c
 Source23:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sr@Latn-%{version}.tar.bz2
-# Source23-md5:	41fecc81a0bfbce8eaf5f40e978be3fe
+# Source23-md5:	65e7e7939b3d538913ddcec261741f75
 Source24:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sv-%{version}.tar.bz2
-# Source24-md5:	58ffb4991e48caa73f434f30ca2b4761
+# Source24-md5:	897218187ef83afcd99406b62e352e69
 Source25:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ta-%{version}.tar.bz2
-# Source25-md5:	43e954db7f2af6f4c4f34a85a31e33d2
+# Source25-md5:	2c55f413ec8e02a667e37d967186dc86
 Source26:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-tg-%{version}.tar.bz2
-# Source26-md5:	2e35a578c8afb853ef5c23e71c2d575e
+# Source26-md5:	c10cd70d7f1a9a397f768002625ad6f9
 Source27:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-zh_CN-%{version}.tar.bz2
-# Source27-md5:	02491c50d888600dccd1685a9ef7ed6c
+# Source27-md5:	5733aa59661f8828c66ef0d2335d4242
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs-devel >= 9:3.2
