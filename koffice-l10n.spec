@@ -1,3 +1,5 @@
+# TODO
+# - missing koffice-l10n-eu-1.5.0.tar.bz2?
 %define	koffice_epoch	5
 Summary:	KOffice suite - international support
 Summary(pl):	KOffice - wsparcie dla wielu jêzyków
