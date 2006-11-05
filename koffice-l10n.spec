@@ -10,7 +10,7 @@ Summary:	KOffice suite - international support
 Summary(pl):	KOffice - wsparcie dla wielu jêzyków
 Name:		koffice-l10n
 Version:	1.6.0
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		X11/Applications
 #Source0:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-bg-%{version}.tar.bz2
@@ -1208,7 +1208,7 @@ if [ $dirs != $langs ]; then
 	exit 1
 fi
 
-%check
+%clean
 check_installed_files() {
 	for a in *.lang; do
 		lang=${a%%.lang}
@@ -1225,7 +1225,6 @@ check_installed_files() {
 }
 check_installed_files
 
-%clean
 rm -rf $RPM_BUILD_ROOT
 
 %files base
