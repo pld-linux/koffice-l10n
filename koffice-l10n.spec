@@ -113,10 +113,23 @@ Obsoletes:	koffice-kspread-i18n
 Obsoletes:	koffice-kugar-i18n
 Obsoletes:	koffice-kword-i18n
 # Languages that didn't make it or are dropped
+Obsoletes:	koffice-l10n-Afrikaans
+Obsoletes:	koffice-l10n-Breton
 Obsoletes:	koffice-l10n-Bulgarian
+Obsoletes:	koffice-l10n-Esperanto
+Obsoletes:	koffice-l10n-Farsi
+Obsoletes:	koffice-l10n-Hebrew
+Obsoletes:	koffice-l10n-Lao
+Obsoletes:	koffice-l10n-Maltese
+Obsoletes:	koffice-l10n-Northern_Sami
 Obsoletes:	koffice-l10n-Norwegian_Nynorsk
+Obsoletes:	koffice-l10n-Spanish
 Obsoletes:	koffice-l10n-Tajik
 Obsoletes:	koffice-l10n-Tamil
+Obsoletes:	koffice-l10n-Thai
+Obsoletes:	koffice-l10n-Upper_Sorbian
+Obsoletes:	koffice-l10n-Xhosa
+Obsoletes:	koffice-l10n-Zulu
 
 %description base
 Empty metapackage to handle obsoletes for individual i18n subpackages.
@@ -1088,12 +1101,13 @@ FindLang() {
 	fi
 
 # share/apps/koffice/autocorrect/*.xml
-	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/$lan.xml" ]; then
+	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/$lang.xml" ]; then
 		echo "%lang($lang) %{_datadir}/apps/koffice/autocorrect/$lang.xml" >> "$language.lang"
 	fi
 
 	if [ ! -s $language.lang ]; then
 		echo >&2 "Missing launguage: $language ($lang)"
+		exit 1
 	fi
 }
 
@@ -1110,15 +1124,15 @@ krita \
 "
 
 for i in $ziew; do
-	rm -rf `find $RPM_BUILD_ROOT -name ${i}\*\.mo`
-	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/${i}
+	rm -rf $(find $RPM_BUILD_ROOT -name "$i*.mo")
+	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/$i
 done
 
-FindLang af Afrikaans
+#FindLang af Afrikaans
 #FindLang ar Arabic
 #FindLang az Azerbaijani
 #FindLang bg Bulgarian
-FindLang br Breton
+#FindLang br Breton
 #FindLang bs Bosnian
 FindLang ca Catalan
 FindLang cs Czech
@@ -1128,17 +1142,17 @@ FindLang de German
 FindLang el Greek
 #FindLang en English
 FindLang en_GB English_UK
-FindLang eo Esperanto
-FindLang es Spanish
+#FindLang eo Esperanto
+#FindLang es Spanish
 FindLang et Estonian
 FindLang eu Basque
-FindLang fa Farsi
+#FindLang fa Farsi
 FindLang fi Finnish
 FindLang fr French
 #FindLang ga Irish
 #FindLang gl Galician
-FindLang he Hebrew
-FindLang hsb Upper_Sorbian
+#FindLang he Hebrew
+#FindLang hsb Upper_Sorbian
 #FindLang hi Hindi
 #FindLang hr Croatian
 FindLang hu Hungarian
@@ -1148,13 +1162,13 @@ FindLang it Italian
 FindLang ja Japanese
 #FindLang ko Korean
 #FindLang lt Lithuanian
-FindLang lo Lao
+#FindLang lo Lao
 FindLang lv Latvian
 #FindLang mi Maori
 #FindLang mk Macedonian
 #FindLang mn Mongolian
 FindLang ms Malay
-FindLang mt Maltese
+#FindLang mt Maltese
 FindLang nb Norwegian_Bokmaal
 FindLang nl Dutch
 #FindLang nn Norwegian_Nynorsk
@@ -1166,7 +1180,7 @@ FindLang pt_BR Brazil_Portuguese
 #FindLang ro Romanian
 FindLang ru Russian
 #FindLang ss Swati
-FindLang se Northern_Sami
+#FindLang se Northern_Sami
 FindLang sk Slovak
 FindLang sl Slovenian
 FindLang sr Serbian
@@ -1175,17 +1189,24 @@ cat Serbian_Latin.lang >> Serbian.lang
 FindLang sv Swedish
 #FindLang ta Tamil
 #FindLang tg Tajik
-FindLang th Thai
+#FindLang th Thai
 FindLang tr Turkish
 #FindLang uk Ukrainian
 #FindLang uz Uzbek
-FindLang ve Venda
+#FindLang ve Venda
 #FindLang vi Vietnamese
 #FindLang wa Walloon
-FindLang xh Xhosa
+#FindLang xh Xhosa
 FindLang zh_CN Simplified_Chinese
 FindLang zh_TW Chinese
-FindLang zu Zulu
+#FindLang zu Zulu
+
+dirs=$(echo %{name}-*-%{version} | wc -w)
+langs=$(echo *.lang | wc -w)
+if [ $dirs ! = $langs ]; then
+	echo >&2 "Not all languages processed!"
+	exit 1
+fi
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -1193,17 +1214,17 @@ rm -rf $RPM_BUILD_ROOT
 %files base
 %defattr(644,root,root,755)
 
-%files -f Afrikaans.lang Afrikaans
-%defattr(644,root,root,755)
+#%files -f Afrikaans.lang Afrikaans
+#%defattr(644,root,root,755)
 
 #%%files -f Arabic.lang Arabic
 ##%files -f Azerbaijani.lang Azerbaijani
 
-%files -f Bulgarian.lang Bulgarian
-%defattr(644,root,root,755)
+#%files -f Bulgarian.lang Bulgarian
+#%defattr(644,root,root,755)
 
-%files -f Breton.lang Breton
-%defattr(644,root,root,755)
+#%files -f Breton.lang Breton
+#%defattr(644,root,root,755)
 
 ##%files -f Bosnian.lang Bosnian
 
@@ -1230,11 +1251,11 @@ rm -rf $RPM_BUILD_ROOT
 %files -f English_UK.lang English_UK
 %defattr(644,root,root,755)
 
-%files -f Esperanto.lang Esperanto
-%defattr(644,root,root,755)
+#%files -f Esperanto.lang Esperanto
+#%defattr(644,root,root,755)
 
-%files -f Spanish.lang Spanish
-%defattr(644,root,root,755)
+#%files -f Spanish.lang Spanish
+#%defattr(644,root,root,755)
 
 %files -f Estonian.lang Estonian
 %defattr(644,root,root,755)
@@ -1242,8 +1263,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Basque.lang Basque
 %defattr(644,root,root,755)
 
-%files -f Farsi.lang Farsi
-%defattr(644,root,root,755)
+#%files -f Farsi.lang Farsi
+#%defattr(644,root,root,755)
 
 %files -f Finnish.lang Finnish
 %defattr(644,root,root,755)
@@ -1255,11 +1276,11 @@ rm -rf $RPM_BUILD_ROOT
 ##%files -f Galician.lang Galician
 ##%files -f Hindi.lang Hindi
 
-%files -f Hebrew.lang Hebrew
-%defattr(644,root,root,755)
+#%files -f Hebrew.lang Hebrew
+#%defattr(644,root,root,755)
 
-%files -f Upper_Sorbian.lang Upper_Sorbian
-%defattr(644,root,root,755)
+#%files -f Upper_Sorbian.lang Upper_Sorbian
+#%defattr(644,root,root,755)
 
 #%%files -f Croatian.lang Croatian
 
@@ -1277,16 +1298,16 @@ rm -rf $RPM_BUILD_ROOT
 
 ##%files -f Korean.lang Korean
 
-%files -f Lao.lang Lao
-%defattr(644,root,root,755)
+#%files -f Lao.lang Lao
+#%defattr(644,root,root,755)
 
 #%%files -f Lithuanian.lang Lithuanian
 
 %files -f Latvian.lang Latvian
 %defattr(644,root,root,755)
 
-%files -f Maltese.lang Maltese
-%defattr(644,root,root,755)
+#%files -f Maltese.lang Maltese
+#%defattr(644,root,root,755)
 
 %files -f Malay.lang Malay
 %defattr(644,root,root,755)
@@ -1301,8 +1322,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Norwegian_Bokmaal.lang Norwegian_Bokmaal
 %defattr(644,root,root,755)
 
-%files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
-%defattr(644,root,root,755)
+#%files -f Norwegian_Nynorsk.lang Norwegian_Nynorsk
+#%defattr(644,root,root,755)
 
 #%%files -f Northern_Sotho.lang Northern_Sotho
 # %files -f Gascon_occitan.lang Gascon_occitan
@@ -1321,8 +1342,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Russian.lang Russian
 %defattr(644,root,root,755)
 
-%files -f Northern_Sami.lang Northern_Sami
-%defattr(644,root,root,755)
+#%files -f Northern_Sami.lang Northern_Sami
+#%defattr(644,root,root,755)
 
 #%%files -f Swati.lang Swati
 
@@ -1338,14 +1359,14 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Swedish.lang Swedish
 %defattr(644,root,root,755)
 
-%files -f Tamil.lang Tamil
-%defattr(644,root,root,755)
+#%files -f Tamil.lang Tamil
+#%defattr(644,root,root,755)
 
-%files -f Tajik.lang Tajik
-%defattr(644,root,root,755)
+#%files -f Tajik.lang Tajik
+#%defattr(644,root,root,755)
 
-%files -f Thai.lang Thai
-%defattr(644,root,root,755)
+#%files -f Thai.lang Thai
+#%defattr(644,root,root,755)
 
 %files -f Turkish.lang Turkish
 %defattr(644,root,root,755)
@@ -1353,14 +1374,14 @@ rm -rf $RPM_BUILD_ROOT
 ##%files -f Ukrainian.lang Ukrainian
 ##%files -f Uzbek.lang Uzbek
 
-%files -f Venda.lang Venda
-%defattr(644,root,root,755)
+#%files -f Venda.lang Venda
+#%defattr(644,root,root,755)
 
 #%%files -f Vietnamese.lang Vietnamese
 # %files -f Walloon.lang Walloon
 
-%files -f Xhosa.lang Xhosa
-%defattr(644,root,root,755)
+#%files -f Xhosa.lang Xhosa
+#%defattr(644,root,root,755)
 
 %files -f Simplified_Chinese.lang Simplified_Chinese
 %defattr(644,root,root,755)
@@ -1368,5 +1389,5 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Chinese.lang Chinese
 %defattr(644,root,root,755)
 
-%files -f Zulu.lang Zulu
-%defattr(644,root,root,755)
+#%files -f Zulu.lang Zulu
+#%defattr(644,root,root,755)
