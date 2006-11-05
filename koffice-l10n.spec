@@ -1203,10 +1203,27 @@ FindLang zh_TW Chinese
 
 dirs=$(echo %{name}-*-%{version} | wc -w)
 langs=$(echo *.lang | wc -w)
-if [ $dirs ! = $langs ]; then
+if [ $dirs != $langs ]; then
 	echo >&2 "Not all languages processed!"
 	exit 1
 fi
+
+%check
+check_installed_files() {
+	for a in *.lang; do
+		lang=${a%%.lang}
+
+		# included in Serbian.lang
+		[ $lang = Serbian_Latin ] && continue
+
+		rpmfile=%{_rpmdir}/%{name}-$lang-%{version}-%{release}.%{_target_cpu}.rpm
+		if [ ! -f $rpmfile ]; then
+			echo >&2 "Missing %%files section for $lang"
+			exit 1
+		fi
+	done
+}
+check_installed_files
 
 %clean
 rm -rf $RPM_BUILD_ROOT
