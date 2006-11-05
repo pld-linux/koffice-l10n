@@ -1,5 +1,4 @@
 # TODO
-# - missing koffice-l10n-eu-1.5.0.tar.bz2?
 # - koffice-bg-1.6.0.tar.bz2
 # - koffice-nn-1.6.0.tar.bz2
 # - koffice-ta-1.6.0.tar.bz2
@@ -32,6 +31,8 @@ Source8:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{
 # Source8-md5:	81db059841e59cfee6371d10b12e82d7
 Source9:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-et-%{version}.tar.bz2
 # Source9-md5:	64b4dd81d61362599af0882d695dd175
+Source28:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-eu-%{version}.tar.bz2
+# Source28-md5:	c3c5dbfe0135896c41f749ff79c6744e
 Source10:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-fi-%{version}.tar.bz2
 # Source10-md5:	738bf409e16c08018b75f672abcb94a4
 Source11:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-fr-%{version}.tar.bz2
@@ -40,6 +41,12 @@ Source12:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%
 # Source12-md5:	01ea831cfbd136fecb1c7de8826e97b9
 Source13:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-it-%{version}.tar.bz2
 # Source13-md5:	73f17287697e54e61237a8cf7f6fc75f
+Source29:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ja-%{version}.tar.bz2
+# Source29-md5:	dd3f979c03f9bc4ae6393a54766b4a84
+Source30:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-lv-%{version}.tar.bz2
+# Source30-md5:	af51669631e18feef464e8d6778a41ad
+Source31:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ms-%{version}.tar.bz2
+# Source31-md5:	259be59d9bfe0e7fba7d96c1b5740614
 Source14:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-nb-%{version}.tar.bz2
 # Source14-md5:	ef631712fe58e8129823b0f53253e153
 Source15:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-nl-%{version}.tar.bz2
@@ -54,6 +61,8 @@ Source19:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%
 # Source19-md5:	8d1be2180acdba3287c2936cc379b4c6
 Source20:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ru-%{version}.tar.bz2
 # Source20-md5:	0b895c8a86f0b3c6f31903c906e0dd08
+Source32:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sk-%{version}.tar.bz2
+# Source32-md5:	3bdbfb8532c3a3422345ff8693544b29
 Source21:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sl-%{version}.tar.bz2
 # Source21-md5:	6dfa4b30a8d246a46dddef1e3933cf36
 Source22:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sr-%{version}.tar.bz2
@@ -66,8 +75,12 @@ Source24:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%
 # Source25-md5:	536e66f3b85923771f2af964b51a465e
 #Source26:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-tg-%{version}.tar.bz2
 # Source26-md5:	a38ec98b0f6437ddb93196f369a09485
+Source33:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-tr-%{version}.tar.bz2
+# Source33-md5:	d941eddab83cc8991d4f218854d25f64
 Source27:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-zh_CN-%{version}.tar.bz2
 # Source27-md5:	a3fda356e170368d7fd88d0ce892307b
+Source34:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-zh_TW-%{version}.tar.bz2
+# Source34-md5:	17ec8363abee3dd45c1a4c103b023ff3
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs-devel >= 9:3.2
@@ -98,10 +111,10 @@ Obsoletes:	koffice-kspread-i18n
 Obsoletes:	koffice-kugar-i18n
 Obsoletes:	koffice-kword-i18n
 # Languages that didn't make it or are dropped
-Obsoletes:	koffice-l10n-Tamil
-Obsoletes:	koffice-l10n-Tajik
-Obsoletes:	koffice-l10n-Norwegian_Nynorsk
 Obsoletes:	koffice-l10n-Bulgarian
+Obsoletes:	koffice-l10n-Norwegian_Nynorsk
+Obsoletes:	koffice-l10n-Tajik
+Obsoletes:	koffice-l10n-Tamil
 
 %description base
 Empty metapackage to handle obsoletes for individual i18n subpackages.
@@ -1020,7 +1033,7 @@ KOffice suite - Zulu language support.
 KOffice - wsparcie dla jêzyka zuluskiego.
 
 %prep
-%setup -q -c -T -a1 -a2 -a3 -a4 -a5 -a6 -a7 -a8 -a9 -a10 -a11 -a12 -a13 -a14 -a15 -a16 -a17 -a18 -a19 -a20 -a21 -a22 -a23 -a24 -a25 -a26 -a27
+%setup -q -c -T %(seq -f '-a %g' 1 34 | egrep -v '^-a (16|25|26)$' | xargs)
 
 %build
 kde_htmldir="%{_kdedocdir}"; export kde_htmldir
@@ -1063,7 +1076,7 @@ FindLang() {
 
 # share/doc/kde/HTML/(%%lang)
     if [ -d "$RPM_BUILD_ROOT%{_kdedocdir}/$1" ]; then
-	echo "%lang($1) %{_kdedocdir}/$1" >> "$2.lang"
+		echo "%lang($1) %{_kdedocdir}/$1" >> "$2.lang"
     fi
 
 # share/locale/(%%lang)
@@ -1111,7 +1124,7 @@ FindLang en_GB English_UK
 FindLang eo Esperanto
 FindLang es Spanish
 FindLang et Estonian
-#FindLang eu Basque
+FindLang eu Basque
 FindLang fa Farsi
 FindLang fi Finnish
 FindLang fr French
@@ -1129,11 +1142,11 @@ FindLang ja Japanese
 #FindLang ko Korean
 #FindLang lt Lithuanian
 FindLang lo Lao
-#FindLang lv Latvian
+FindLang lv Latvian
 #FindLang mi Maori
 #FindLang mk Macedonian
 #FindLang mn Mongolian
-#FindLang ms Malay
+FindLang ms Malay
 FindLang mt Maltese
 FindLang nb Norwegian_Bokmaal
 FindLang nl Dutch
@@ -1203,7 +1216,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %files -f Estonian.lang Estonian
 %defattr(644,root,root,755)
-##%files -f Basque.lang Basque
+%files -f Basque.lang Basque
+%defattr(644,root,root,755)
 %files -f Farsi.lang Farsi
 %defattr(644,root,root,755)
 %files -f Finnish.lang Finnish
@@ -1230,10 +1244,12 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Lao.lang Lao
 %defattr(644,root,root,755)
 #%%files -f Lithuanian.lang Lithuanian
-##%files -f Latvian.lang Latvian
+%files -f Latvian.lang Latvian
+%defattr(644,root,root,755)
 %files -f Maltese.lang Maltese
 %defattr(644,root,root,755)
-##%files -f Malay.lang Malay
+%files -f Malay.lang Malay
+%defattr(644,root,root,755)
 ##%files -f Mongolian.lang Mongolian
 # %files -f Maori.lang Maori
 #%%files -f Macedonian.lang Macedonian
