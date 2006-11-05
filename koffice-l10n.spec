@@ -12,7 +12,7 @@ Release:	0.1
 License:	GPL
 Group:		X11/Applications
 #Source0:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-bg-%{version}.tar.bz2
-# Source0-md5:	8daaeb614b3439490c2dd64a5ca6a90d
+##Source0-md5:	8daaeb614b3439490c2dd64a5ca6a90d
 Source1:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ca-%{version}.tar.bz2
 # Source1-md5:	b90e14bd3508bcc030096496ea87683a
 Source2:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-cs-%{version}.tar.bz2
@@ -52,7 +52,7 @@ Source14:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%
 Source15:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-nl-%{version}.tar.bz2
 # Source15-md5:	b9c572b04701226fdce5e9ae5817177c
 #Source16:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-nn-%{version}.tar.bz2
-# Source16-md5:	12a451ca1384c776045a86aa3f0fecb5
+##Source16-md5:	12a451ca1384c776045a86aa3f0fecb5
 Source17:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-pl-%{version}.tar.bz2
 # Source17-md5:	aaa167a7881f383b88696d34fd1903a5
 Source18:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-pt-%{version}.tar.bz2
@@ -72,9 +72,9 @@ Source23:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%
 Source24:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sv-%{version}.tar.bz2
 # Source24-md5:	774efb0a9c02776c58ca6cfe1930d327
 #Source25:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ta-%{version}.tar.bz2
-# Source25-md5:	536e66f3b85923771f2af964b51a465e
+##Source25-md5:	536e66f3b85923771f2af964b51a465e
 #Source26:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-tg-%{version}.tar.bz2
-# Source26-md5:	a38ec98b0f6437ddb93196f369a09485
+##Source26-md5:	a38ec98b0f6437ddb93196f369a09485
 Source33:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-tr-%{version}.tar.bz2
 # Source33-md5:	d941eddab83cc8991d4f218854d25f64
 Source27:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-zh_CN-%{version}.tar.bz2
@@ -1071,22 +1071,29 @@ rm -f *.lang
 FindLang() {
 #    $1 - short language name
 #    $2 - long language name
+	local lang="$1"
+	local language="$2"
 
-    echo "%defattr(644,root,root,755)" > "$2.lang"
+    echo '%defattr(644,root,root,755)' > "$language.lang"
 
 # share/doc/kde/HTML/(%%lang)
-    if [ -d "$RPM_BUILD_ROOT%{_kdedocdir}/$1" ]; then
-		echo "%lang($1) %{_kdedocdir}/$1" >> "$2.lang"
+    if [ -d "$RPM_BUILD_ROOT%{_kdedocdir}/$lang" ]; then
+		echo "%lang($lang) %{_kdedocdir}/$lang" >> "$language.lang"
     fi
 
 # share/locale/(%%lang)
-	if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$1" ]; then
-		echo "%lang($1) %{_datadir}/locale/$1/LC_MESSAGES/*.mo" >> "$2.lang"
+	if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$lang" ]; then
+		echo "%lang($lang) %{_datadir}/locale/$lang/LC_MESSAGES/*.mo" >> "$language.lang"
 	fi
 
 # share/apps/koffice/autocorrect/*.xml
-	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/${1}.xml" ]; then
-		echo "%lang($1) %{_datadir}/apps/koffice/autocorrect/${1}.xml" >> "$2.lang"
+	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/$lan.xml" ]; then
+		echo "%lang($lang) %{_datadir}/apps/koffice/autocorrect/$lang.xml" >> "$language.lang"
+	fi
+
+	count=$(cat $language.lang | wc -l)
+	if [ $count -le 1 ]; then
+		echo >&2 "Missing launguage: $language ($lang)"
 	fi
 }
 
