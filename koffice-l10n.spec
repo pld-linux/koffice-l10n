@@ -1186,6 +1186,7 @@ FindLang sl Slovenian
 FindLang sr Serbian
 FindLang sr@Latn Serbian_Latin
 cat Serbian_Latin.lang >> Serbian.lang
+rm -f Serbian_Latin.lang
 FindLang sv Swedish
 #FindLang ta Tamil
 #FindLang tg Tajik
@@ -1212,9 +1213,6 @@ fi
 check_installed_files() {
 	for a in *.lang; do
 		lang=${a%%.lang}
-
-		# included in Serbian.lang
-		[ $lang = Serbian_Latin ] && continue
 
 		rpmfile=%{_rpmdir}/%{name}-$lang-%{version}-%{release}.%{_target_cpu}.rpm
 		if [ ! -f $rpmfile ]; then
