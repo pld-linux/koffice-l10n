@@ -7,7 +7,7 @@
 # - broken: es
 %define	koffice_epoch	5
 Summary:	KOffice suite - international support
-Summary(pl):	KOffice - wsparcie dla wielu j陑yk體
+Summary(pl.UTF-8):   KOffice - wsparcie dla wielu j臋zyk贸w
 Name:		koffice-l10n
 Version:	1.6.1
 Release:	1
@@ -94,12 +94,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 KOffice suite - international support.
 
-%description -l pl
-KOffice - wsparcie dla wielu j陑yk體.
+%description -l pl.UTF-8
+KOffice - wsparcie dla wielu j臋zyk贸w.
 
 %package base
 Summary:	Empty metapackage to handle obsoletes
-Summary(pl):	Pusty metapakiet z obsoletes
+Summary(pl.UTF-8):   Pusty metapakiet z obsoletes
 Group:		X11/Applications
 Requires:	kde-i18n-base
 Obsoletes:	koffice-common-i18n
@@ -134,12 +134,12 @@ Obsoletes:	koffice-l10n-Zulu
 %description base
 Empty metapackage to handle obsoletes for individual i18n subpackages.
 
-%description base -l pl
-Pusty metapakiet z Obsoletes dla oddzielnych podpakiet體 i18n.
+%description base -l pl.UTF-8
+Pusty metapakiet z Obsoletes dla oddzielnych podpakiet贸w i18n.
 
 %package Afrikaans
 Summary:	KOffice suite - Afrikaans language support
-Summary(pl):	KOffice - wsparcie dla j陑yka afrykanerskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka afrykanerskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Afrikaans
@@ -147,12 +147,12 @@ Obsoletes:	koffice-i18n-Afrikaans
 %description Afrikaans
 KOffice suite - Afrikaans language support.
 
-%description Afrikaans -l pl
-KOffice - wsparcie dla j陑yka afrykanerskiego.
+%description Afrikaans -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka afrykanerskiego.
 
 %package Arabic
 Summary:	KOffice suite - Arabic language support
-Summary(pl):	KOffice - wsparcie dla j陑yka arabskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka arabskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Arabic
@@ -160,12 +160,12 @@ Obsoletes:	koffice-i18n-Arabic
 %description Arabic
 KOffice suite - Arabic language support.
 
-%description Arabic -l pl
-KOffice - wsparcie dla j陑yka arabskiego.
+%description Arabic -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka arabskiego.
 
 %package Azerbaijani
 Summary:	KOffice suite - Azerbaijani language support
-Summary(pl):	KOffice - wsparcie dla j陑yka azerskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka azerskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Azerbaijani
@@ -173,12 +173,12 @@ Obsoletes:	koffice-i18n-Azerbaijani
 %description Azerbaijani
 KOffice suite - Azerbaijani language support.
 
-%description Azerbaijani -l pl
-KOffice - wsparcie dla j陑yka azerskiego.
+%description Azerbaijani -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka azerskiego.
 
 %package Bulgarian
 Summary:	KOffice suite - Bulgarian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka bu砱arskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka bu艂garskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Bulgarian
@@ -186,12 +186,12 @@ Obsoletes:	koffice-i18n-Bulgarian
 %description Bulgarian
 KOffice suite - Bulgarian language support.
 
-%description Bulgarian -l pl
-KOffice - wsparcie dla j陑yka bu砱arskiego.
+%description Bulgarian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka bu艂garskiego.
 
 %package Breton
 Summary:	KOffice suite - Breton language support
-Summary(pl):	KOffice - wsparcie dla j陑yka breto駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka breto艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Breton
@@ -199,12 +199,12 @@ Obsoletes:	koffice-i18n-Breton
 %description Breton
 KOffice suite - Breton language support.
 
-%description Breton -l pl
-KOffice - wsparcie dla j陑yka breto駍kiego.
+%description Breton -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka breto艅skiego.
 
 %package Bosnian
 Summary:	KOffice suite - Bosnian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka bo秐iackiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka bo艣niackiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Bosnian
@@ -212,12 +212,12 @@ Obsoletes:	koffice-i18n-Bosnian
 %description Bosnian
 KOffice suite - Bosnian language support.
 
-%description Bosnian -l pl
-KOffice - wsparcie dla j陑yka bo秐iackiego.
+%description Bosnian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka bo艣niackiego.
 
 %package Catalan
 Summary:	KOffice suite - Catalan language support
-Summary(pl):	KOffice - wsparcie dla j陑yka katalo駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka katalo艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Catalan
@@ -225,12 +225,12 @@ Obsoletes:	koffice-i18n-Catalan
 %description Catalan
 KOffice suite - Catalan language support.
 
-%description Catalan -l pl
-KOffice - wsparcie dla j陑yka katalo駍kiego.
+%description Catalan -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka katalo艅skiego.
 
 %package Czech
 Summary:	KOffice suite - Czech language support
-Summary(pl):	KOffice - wsparcie dla j陑yka czeskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka czeskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Czech
@@ -238,12 +238,12 @@ Obsoletes:	koffice-i18n-Czech
 %description Czech
 KOffice suite - Czech language support.
 
-%description Czech -l pl
-KOffice - wsparcie dla j陑yka czeskiego.
+%description Czech -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka czeskiego.
 
 %package Cymraeg
 Summary:	KOffice suite - Cymraeg language support
-Summary(pl):	KOffice - wsparcie dla j陑yka walijskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka walijskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Cymraeg
@@ -251,12 +251,12 @@ Obsoletes:	koffice-i18n-Cymraeg
 %description Cymraeg
 KOffice suite - Cymraeg language support.
 
-%description Cymraeg -l pl
-KOffice - wsparcie dla j陑yka walijskiego.
+%description Cymraeg -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka walijskiego.
 
 %package Danish
 Summary:	KOffice suite - Danish language support
-Summary(pl):	KOffice - wsparcie dla j陑yka du駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka du艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Danish
@@ -264,12 +264,12 @@ Obsoletes:	koffice-i18n-Danish
 %description Danish
 KOffice suite - Danish language support.
 
-%description Danish -l pl
-KOffice - wsparcie dla j陑yka du駍kiego.
+%description Danish -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka du艅skiego.
 
 %package German
 Summary:	KOffice suite - German language support
-Summary(pl):	KOffice - wsparcie dla j陑yka niemieckiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka niemieckiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-German
@@ -277,12 +277,12 @@ Obsoletes:	koffice-i18n-German
 %description German
 KOffice suite - German language support.
 
-%description German -l pl
-KOffice - wsparcie dla j陑yka niemieckiego.
+%description German -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka niemieckiego.
 
 %package Greek
 Summary:	KOffice suite - Greek language support
-Summary(pl):	KOffice - wsparcie dla j陑yka greckiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka greckiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Greek
@@ -290,12 +290,12 @@ Obsoletes:	koffice-i18n-Greek
 %description Greek
 KOffice suite - Greek language support.
 
-%description Greek -l pl
-KOffice - wsparcie dla j陑yka greckiego.
+%description Greek -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka greckiego.
 
 %package English
 Summary:	KOffice suite - English language support
-Summary(pl):	KOffice - wsparcie dla j陑yka angielskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka angielskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-English
@@ -303,12 +303,12 @@ Obsoletes:	koffice-i18n-English
 %description English
 KOffice suite - English language support.
 
-%description English -l pl
-KOffice - wsparcie dla j陑yka angielskiego.
+%description English -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka angielskiego.
 
 %package English_UK
 Summary:	KOffice suite - KOffice suite - English (UK) language support
-Summary(pl):	KOffice - wsparcie dla j陑yka angielskiego (odmiany brytyjskiej)
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka angielskiego (odmiany brytyjskiej)
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-English_UK
@@ -316,12 +316,12 @@ Obsoletes:	koffice-i18n-English_UK
 %description English_UK
 KOffice suite - English (UK) language support.
 
-%description English_UK -l pl
-KOffice - wsparcie dla j陑yka angielskiego (odmiany brytyjskiej).
+%description English_UK -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka angielskiego (odmiany brytyjskiej).
 
 %package Esperanto
 Summary:	KOffice suite - Esperanto language support
-Summary(pl):	KOffice - wsparcie dla j陑yka esperanto
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka esperanto
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Esperanto
@@ -329,12 +329,12 @@ Obsoletes:	koffice-i18n-Esperanto
 %description Esperanto
 KOffice suite - Esperanto language support.
 
-%description Esperanto -l pl
-KOffice - wsparcie dla j陑yka esperanto.
+%description Esperanto -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka esperanto.
 
 %package Spanish
 Summary:	KOffice suite - Spanish language support
-Summary(pl):	KOffice - wsparcie dla j陑yka hiszpa駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka hiszpa艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Spanish
@@ -342,12 +342,12 @@ Obsoletes:	koffice-i18n-Spanish
 %description Spanish
 KOffice suite - Spanish language support.
 
-%description Spanish -l pl
-KOffice - wsparcie dla j陑yka hiszpa駍kiego.
+%description Spanish -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka hiszpa艅skiego.
 
 %package Estonian
 Summary:	KOffice suite - Estonian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka esto駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka esto艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Estonian
@@ -355,12 +355,12 @@ Obsoletes:	koffice-i18n-Estonian
 %description Estonian
 KOffice suite - Estonian language support.
 
-%description Estonian -l pl
-KOffice - wsparcie dla j陑yka esto駍kiego.
+%description Estonian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka esto艅skiego.
 
 %package Basque
 Summary:	KOffice suite - Basque language support
-Summary(pl):	KOffice - wsparcie dla j陑yka baskijskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka baskijskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Basque
@@ -368,12 +368,12 @@ Obsoletes:	koffice-i18n-Basque
 %description Basque
 KOffice suite - Basque language support.
 
-%description Basque -l pl
-KOffice - wsparcie dla j陑yka baskijskiego.
+%description Basque -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka baskijskiego.
 
 %package Farsi
 Summary:	KOffice suite - Farsi language support
-Summary(pl):	KOffice - wsparcie dla j陑yka perskiego (farsi)
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka perskiego (farsi)
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Farsi
@@ -381,12 +381,12 @@ Obsoletes:	koffice-i18n-Farsi
 %description Farsi
 KOffice suite - Farsi language support.
 
-%description Farsi -l pl
-KOffice - wsparcie dla j陑yka perskiego (farsi).
+%description Farsi -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka perskiego (farsi).
 
 %package Finnish
 Summary:	KOffice suite - Finnish language support
-Summary(pl):	KOffice - wsparcie dla j陑yka fi駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka fi艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Finnish
@@ -394,12 +394,12 @@ Obsoletes:	koffice-i18n-Finnish
 %description Finnish
 KOffice suite - Finnish language support.
 
-%description Finnish -l pl
-KOffice - wsparcie dla j陑yka fi駍kiego.
+%description Finnish -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka fi艅skiego.
 
 %package French
 Summary:	KOffice suite - French language support
-Summary(pl):	KOffice - wsparcie dla j陑yka francuskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka francuskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-French
@@ -407,12 +407,12 @@ Obsoletes:	koffice-i18n-French
 %description French
 KOffice suite - French language support.
 
-%description French -l pl
-KOffice - wsparcie dla j陑yka francuskiego.
+%description French -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka francuskiego.
 
 %package Irish
 Summary:	KOffice suite - Irish language support
-Summary(pl):	KOffice - wsparcie dla j陑yka irlandzkiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka irlandzkiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Irish
@@ -420,12 +420,12 @@ Obsoletes:	koffice-i18n-Irish
 %description Irish
 KOffice suite - Irish language support.
 
-%description Irish -l pl
-KOffice - wsparcie dla j陑yka irlandzkiego.
+%description Irish -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka irlandzkiego.
 
 %package Galician
 Summary:	KOffice suite - Galician language support
-Summary(pl):	KOffice - wsparcie dla j陑yka galicyjskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka galicyjskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Galician
@@ -433,12 +433,12 @@ Obsoletes:	koffice-i18n-Galician
 %description Galician
 KOffice suite - Galician language support.
 
-%description Galician -l pl
-KOffice - wsparcie dla j陑yka galicyjskiego.
+%description Galician -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka galicyjskiego.
 
 %package Hindi
 Summary:	KOffice suite - Hindi language support
-Summary(pl):	KOffice - wsparcie dla j陑yka hindi
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka hindi
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Hindi
@@ -446,12 +446,12 @@ Obsoletes:	koffice-i18n-Hindi
 %description Hindi
 KOffice suite - Hindi language support.
 
-%description Hindi -l pl
-KOffice - wsparcie dla j陑yka hindi.
+%description Hindi -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka hindi.
 
 %package Hebrew
 Summary:	KOffice suite - Hebrew language support
-Summary(pl):	KOffice - wsparcie dla j陑yka hebrajskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka hebrajskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Hebrew
@@ -459,12 +459,12 @@ Obsoletes:	koffice-i18n-Hebrew
 %description Hebrew
 KOffice suite - Hebrew language support.
 
-%description Hebrew -l pl
-KOffice - wsparcie dla j陑yka hebrajskiego.
+%description Hebrew -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka hebrajskiego.
 
 %package Croatian
 Summary:	KOffice suite - Croatian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka chorwackiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka chorwackiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Croatian
@@ -472,12 +472,12 @@ Obsoletes:	koffice-i18n-Croatian
 %description Croatian
 KOffice suite - Croatian language support.
 
-%description Croatian -l pl
-KOffice - wsparcie dla j陑yka chorwackiego.
+%description Croatian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka chorwackiego.
 
 %package Hungarian
 Summary:	KOffice suite - Hungarian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka w阦ierskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka w臋gierskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Hungarian
@@ -485,12 +485,12 @@ Obsoletes:	koffice-i18n-Hungarian
 %description Hungarian
 KOffice suite - Hungarian language support.
 
-%description Hungarian -l pl
-KOffice - wsparcie dla j陑yka w阦ierskiego.
+%description Hungarian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka w臋gierskiego.
 
 %package Upper_Sorbian
 Summary:	KOffice suite - Upper Sorbian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka g髍no硊縴ckiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka g贸rno艂u偶yckiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Upper_Sorbian
@@ -498,12 +498,12 @@ Obsoletes:	koffice-i18n-Upper_Sorbian
 %description Upper_Sorbian
 KOffice suite - Upper Sorbian language support.
 
-%description Upper_Sorbian  -l pl
-KOffice - wsparcie dla j陑yka g髍no硊縴ckiego.
+%description Upper_Sorbian  -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka g贸rno艂u偶yckiego.
 
 %package Indonesian
 Summary:	KOffice suite - Indonesian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka indonezyjskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka indonezyjskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Indonesian
@@ -511,12 +511,12 @@ Obsoletes:	koffice-i18n-Indonesian
 %description Indonesian
 KOffice suite - Indonesian language support.
 
-%description Indonesian -l pl
-KOffice - wsparcie dla j陑yka indonezyjskiego.
+%description Indonesian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka indonezyjskiego.
 
 %package Icelandic
 Summary:	KOffice suite - Icelandic language support
-Summary(pl):	KOffice - wsparcie dla j陑yka islandzkiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka islandzkiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Icelandic
@@ -524,12 +524,12 @@ Obsoletes:	koffice-i18n-Icelandic
 %description Icelandic
 KOffice suite - Icelandic language support.
 
-%description Icelandic -l pl
-KOffice - wsparcie dla j陑yka islandzkiego.
+%description Icelandic -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka islandzkiego.
 
 %package Italian
 Summary:	KOffice suite - Italian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka w硂skiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka w艂oskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Italian
@@ -537,12 +537,12 @@ Obsoletes:	koffice-i18n-Italian
 %description Italian
 KOffice suite - Italian language support.
 
-%description Italian -l pl
-KOffice - wsparcie dla j陑yka w硂skiego.
+%description Italian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka w艂oskiego.
 
 %package Japanese
 Summary:	KOffice suite - Japanese language support
-Summary(pl):	KOffice - wsparcie dla j陑yka japo駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka japo艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Japanese
@@ -550,12 +550,12 @@ Obsoletes:	koffice-i18n-Japanese
 %description Japanese
 KOffice suite - Japanese language support.
 
-%description Japanese -l pl
-KOffice - wsparcie dla j陑yka japo駍kiego.
+%description Japanese -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka japo艅skiego.
 
 %package Korean
 Summary:	KOffice suite - Korean language support
-Summary(pl):	KOffice - wsparcie dla j陑yka korea駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka korea艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Korean
@@ -563,12 +563,12 @@ Obsoletes:	koffice-i18n-Korean
 %description Korean
 KOffice suite - Korean language support.
 
-%description Korean -l pl
-KOffice - wsparcie dla j陑yka korea駍kiego.
+%description Korean -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka korea艅skiego.
 
 %package Lithuanian
 Summary:	KOffice suite - Lithuanian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka litewskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka litewskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Lithuanian
@@ -576,12 +576,12 @@ Obsoletes:	koffice-i18n-Lithuanian
 %description Lithuanian
 KOffice suite - Lithuanian language support.
 
-%description Lithuanian -l pl
-KOffice - Wsparcie dla j陑yka litewskiego.
+%description Lithuanian -l pl.UTF-8
+KOffice - Wsparcie dla j臋zyka litewskiego.
 
 %package Lao
 Summary:	KOffice suite - Lao language support
-Summary(pl):	KOffice - wsparcie dla j陑yka laota駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka laota艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Lao
@@ -589,12 +589,12 @@ Obsoletes:	koffice-i18n-Lao
 %description Lao
 KOffice suite - lao language support.
 
-%description Lao -l pl
-KOffice - wsparcie dla j陑yka laota駍kiego.
+%description Lao -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka laota艅skiego.
 
 %package Latvian
 Summary:	KOffice suite - Latvian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka 硂tewskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka 艂otewskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Latvian
@@ -602,12 +602,12 @@ Obsoletes:	koffice-i18n-Latvian
 %description Latvian
 KOffice suite - Latvian language support.
 
-%description Latvian -l pl
-KOffice - wsparcie dla j陑yka 硂tewskiego.
+%description Latvian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka 艂otewskiego.
 
 %package Maori
 Summary:	KOffice suite - Maori language support
-Summary(pl):	KOffice - wsparcie dla j陑yka maoryjskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka maoryjskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Maori
@@ -615,12 +615,12 @@ Obsoletes:	koffice-i18n-Maori
 %description Maori
 KOffice suite - Maori language support.
 
-%description Maori -l pl
-KOffice - wsparcie dla j陑yka maoryjskiego.
+%description Maori -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka maoryjskiego.
 
 %package Macedonian
 Summary:	KOffice suite - Macedonian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka macedo駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka macedo艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Macedonian
@@ -628,12 +628,12 @@ Obsoletes:	koffice-i18n-Macedonian
 %description Macedonian
 KOffice suite - Macedonian language support.
 
-%description Macedonian -l pl
-KOffice - wsparcie dla j陑yka macedo駍kiego.
+%description Macedonian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka macedo艅skiego.
 
 %package Malay
 Summary:	KOffice suite - Malay language support
-Summary(pl):	KOffice - wsparcie dla j陑yka malajskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka malajskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Malay
@@ -641,12 +641,12 @@ Obsoletes:	koffice-i18n-Malay
 %description Malay
 KOffice suite - Malay language support.
 
-%description Malay -l pl
-KOffice - wsparcie dla j陑yka malajskiego.
+%description Malay -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka malajskiego.
 
 %package Maltese
 Summary:	KOffice suite - Maltese language support
-Summary(pl):	KOffice - wsparcie dla j陑yka malta駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka malta艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Maltese
@@ -654,12 +654,12 @@ Obsoletes:	koffice-i18n-Maltese
 %description Maltese
 KOffice suite - Maltese language support.
 
-%description Maltese -l pl
-KOffice - wsparcie dla j陑yka malta駍kiego.
+%description Maltese -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka malta艅skiego.
 
 %package Mongolian
 Summary:	KOffice suite - Mongolian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka mongolskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka mongolskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Mongolian
@@ -667,12 +667,12 @@ Obsoletes:	koffice-i18n-Mongolian
 %description Mongolian
 KOffice suite - Mongolian language support.
 
-%description Mongolian -l pl
-KOffice - wsparcie dla j陑yka mongolskiego.
+%description Mongolian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka mongolskiego.
 
 %package Dutch
 Summary:	KOffice suite - Dutch language support
-Summary(pl):	KOffice - wsparcie dla j陑yka holenderskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka holenderskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Dutch
@@ -680,12 +680,12 @@ Obsoletes:	koffice-i18n-Dutch
 %description Dutch
 KOffice suite - Dutch language support.
 
-%description Dutch -l pl
-KOffice - wsparcie dla j陑yka holenderskiego.
+%description Dutch -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka holenderskiego.
 
 %package Norwegian_Bokmaal
 Summary:	KOffice suite - Norwegian (Bokmaal) language support
-Summary(pl):	KOffice - wsparcie dla j陑yka norweskiego (odmiany bokmaal)
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka norweskiego (odmiany bokmaal)
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Norwegian_Bokmaal
@@ -693,12 +693,12 @@ Obsoletes:	koffice-i18n-Norwegian_Bokmaal
 %description Norwegian_Bokmaal
 KOffice suite - Norwegian (Bokmaal) language support.
 
-%description Norwegian_Bokmaal -l pl
-KOffice - wsparcie dla j陑yka norweskiego (odmiany bokmaal).
+%description Norwegian_Bokmaal -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka norweskiego (odmiany bokmaal).
 
 %package Norwegian_Nynorsk
 Summary:	KOffice suite - Norwegian (Nynorsk) language support
-Summary(pl):	KOffice - wsparcie dla j陑yka norweskiego (odmiany nynorsk)
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka norweskiego (odmiany nynorsk)
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Norwegian_Nynorsk
@@ -706,12 +706,12 @@ Obsoletes:	koffice-i18n-Norwegian_Nynorsk
 %description Norwegian_Nynorsk
 KOffice suite - Norwegian (Nynorsk) language support.
 
-%description Norwegian_Nynorsk -l pl
-KOffice - wsparcie dla j陑yka norweskiego (odmiany nynorsk).
+%description Norwegian_Nynorsk -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka norweskiego (odmiany nynorsk).
 
 %package Northern_Sotho
 Summary:	KOffice suite - Northern Sotho language support
-Summary(pl):	KOffice - wsparcie dla p蟪nocnej odmiany j陑yka ludu Soto
+Summary(pl.UTF-8):   KOffice - wsparcie dla p贸艂nocnej odmiany j臋zyka ludu Soto
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Northern_Sotho
@@ -719,12 +719,12 @@ Obsoletes:	koffice-i18n-Northern_Sotho
 %description Northern_Sotho
 KOffice suite - Northern Sotho language support.
 
-%description Northern_Sotho -l pl
-KOffice - wsparcie dla p蟪nocnej odmiany j陑yka ludu Soto.
+%description Northern_Sotho -l pl.UTF-8
+KOffice - wsparcie dla p贸艂nocnej odmiany j臋zyka ludu Soto.
 
 %package Gascon_occitan
 Summary:	KOffice suite - Occitan (Gascon) language support
-Summary(pl):	KOffice - wsparcie dla j陑yka oksyta駍kiego (dialektu gasko駍kiego)
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka oksyta艅skiego (dialektu gasko艅skiego)
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Gascon_occitan
@@ -732,12 +732,12 @@ Obsoletes:	koffice-i18n-Gascon_occitan
 %description Gascon_occitan
 KOffice suite - Occitan (Gascon) language support.
 
-%description Gascon_occitan -l pl
-KOffice - wsparcie dla j陑yka oksyta駍kiego (dialektu gasko駍kiego).
+%description Gascon_occitan -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka oksyta艅skiego (dialektu gasko艅skiego).
 
 %package Polish
 Summary:	KOffice suite - Polish language support
-Summary(pl):	KOffice - wsparcie dla j陑yka polskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka polskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Polish
@@ -745,12 +745,12 @@ Obsoletes:	koffice-i18n-Polish
 %description Polish
 KOffice suite - Polish language support.
 
-%description Polish -l pl
-KOffice - wsparcie dla j陑yka polskiego.
+%description Polish -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka polskiego.
 
 %package Portuguese
 Summary:	KOffice suite - Portuguese language support
-Summary(pl):	KOffice - wsparcie dla j陑yka portugalskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka portugalskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Portuguese
@@ -758,12 +758,12 @@ Obsoletes:	koffice-i18n-Portuguese
 %description Portuguese
 KOffice suite - Portuguese language support.
 
-%description Portuguese -l pl
-KOffice - wsparcie dla j陑yka portugalskiego.
+%description Portuguese -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka portugalskiego.
 
 %package Brazil_Portuguese
 Summary:	KOffice suite - Portuguese (Brazil) language support
-Summary(pl):	KOffice - wsparcie dla j陑yka portugalskiego (odmiany brazylijskiej)
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka portugalskiego (odmiany brazylijskiej)
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Brazil_Portuguese
@@ -771,12 +771,12 @@ Obsoletes:	koffice-i18n-Brazil_Portuguese
 %description Brazil_Portuguese
 KOffice suite - Portuguese (Brazil) language support.
 
-%description Brazil_Portuguese -l pl
-KOffice - wsparcie dla j陑yka portugalskiego (odmiany brazylijskiej).
+%description Brazil_Portuguese -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka portugalskiego (odmiany brazylijskiej).
 
 %package Romanian
 Summary:	KOffice suite - Romanian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka rumu駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka rumu艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Romanian
@@ -784,12 +784,12 @@ Obsoletes:	koffice-i18n-Romanian
 %description Romanian
 KOffice suite - Romanian language support.
 
-%description Romanian -l pl
-KOffice - wsparcie dla j陑yka rumu駍kiego.
+%description Romanian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka rumu艅skiego.
 
 %package Russian
 Summary:	KOffice suite - Russian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka rosyjskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka rosyjskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Russian
@@ -797,12 +797,12 @@ Obsoletes:	koffice-i18n-Russian
 %description Russian
 KOffice suite - Russian language support.
 
-%description Russian -l pl
-KOffice - wsparcie dla j陑yka rosyjskiego.
+%description Russian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka rosyjskiego.
 
 %package Swati
 Summary:	KOffice suite - Swati language support
-Summary(pl):	KOffice - wsparcie dla j陑yka swati
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka swati
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Swati
@@ -810,12 +810,12 @@ Obsoletes:	koffice-i18n-Swati
 %description Swati
 KOffice suite - Swati language support.
 
-%description Swati -l pl
-KOffice - wsparcie dla j陑yka swati.
+%description Swati -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka swati.
 
 %package Northern_Sami
 Summary:	KOffice suite - Northern Sami language support
-Summary(pl):	KOffice - wsparcie dla p蟪nocnego j陑yka saami (lapo駍kiego)
+Summary(pl.UTF-8):   KOffice - wsparcie dla p贸艂nocnego j臋zyka saami (lapo艅skiego)
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Northern_Sami
@@ -823,12 +823,12 @@ Obsoletes:	koffice-i18n-Northern_Sami
 %description Northern_Sami
 KOffice suite - Northern Sami language support.
 
-%description Northern_Sami -l pl
-KOffice - wsparcie dla p蟪nocnego j陑yka saami (lapo駍kiego).
+%description Northern_Sami -l pl.UTF-8
+KOffice - wsparcie dla p贸艂nocnego j臋zyka saami (lapo艅skiego).
 
 %package Slovak
 Summary:	KOffice suite - Slovak language support
-Summary(pl):	KOffice - wsparcie dla j陑yka s硂wackiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka s艂owackiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Slovak
@@ -836,12 +836,12 @@ Obsoletes:	koffice-i18n-Slovak
 %description Slovak
 KOffice suite - Slovak language support.
 
-%description Slovak -l pl
-KOffice - wsparcie dla j陑yka s硂wackiego.
+%description Slovak -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka s艂owackiego.
 
 %package Slovenian
 Summary:	KOffice suite - Slovenian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka s硂we駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka s艂owe艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Slovenian
@@ -849,12 +849,12 @@ Obsoletes:	koffice-i18n-Slovenian
 %description Slovenian
 KOffice suite - Slovenian language support.
 
-%description Slovenian -l pl
-KOffice - wsparcie dla j陑yka s硂we駍kiego.
+%description Slovenian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka s艂owe艅skiego.
 
 %package Serbian
 Summary:	KOffice suite - Serbian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka serbskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka serbskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Serbian
@@ -862,12 +862,12 @@ Obsoletes:	koffice-i18n-Serbian
 %description Serbian
 KOffice suite - Serbian language support.
 
-%description Serbian -l pl
-KOffice - wsparcie dla j陑yka serbskiego.
+%description Serbian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka serbskiego.
 
 %package Swedish
 Summary:	KOffice suite - Swedish language support
-Summary(pl):	KOffice - wsparcie dla j陑yka szwedzkiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka szwedzkiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Swedish
@@ -875,12 +875,12 @@ Obsoletes:	koffice-i18n-Swedish
 %description Swedish
 KOffice suite - Swedish language support.
 
-%description Swedish -l pl
-KOffice - wsparcie dla j陑yka szwedzkiego.
+%description Swedish -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka szwedzkiego.
 
 %package Tamil
 Summary:	KOffice suite - Tamil language support
-Summary(pl):	KOffice - wsparcie dla j陑yka tamilskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka tamilskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Tamil
@@ -888,12 +888,12 @@ Obsoletes:	koffice-i18n-Tamil
 %description Tamil
 KOffice suite - Tamil language support.
 
-%description Tamil -l pl
-KOffice - wsparcie dla j陑yka tamilskiego.
+%description Tamil -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka tamilskiego.
 
 %package Tajik
 Summary:	KOffice - Tajik language support
-Summary(pl):	KOffice - wsparcie dla j陑yka tad縴ckiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka tad偶yckiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Tajik
@@ -901,12 +901,12 @@ Obsoletes:	koffice-i18n-Tajik
 %description Tajik
 KOffice - Tajik language support.
 
-%description Tajik -l pl
-KOffice - wsparcie dla j陑yka tad縴ckiego.
+%description Tajik -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka tad偶yckiego.
 
 %package Thai
 Summary:	KOffice suite - Thai language support
-Summary(pl):	KOffice - wsparcie dla j陑yka tajlandzkiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka tajlandzkiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Thai
@@ -914,12 +914,12 @@ Obsoletes:	koffice-i18n-Thai
 %description Thai
 KOffice suite - Thai language support.
 
-%description Thai -l pl
-KOffice - wsparcie dla j陑yka tajlandzkiego.
+%description Thai -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka tajlandzkiego.
 
 %package Turkish
 Summary:	KOffice suite - Turkish language support
-Summary(pl):	KOffice - wsparcie dla j陑yka tureckiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka tureckiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Turkish
@@ -927,12 +927,12 @@ Obsoletes:	koffice-i18n-Turkish
 %description Turkish
 KOffice suite - Turkish language support.
 
-%description Turkish -l pl
-KOffice - wsparcie dla j陑yka tureckiego.
+%description Turkish -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka tureckiego.
 
 %package Ukrainian
 Summary:	KOffice suite - Ukrainian language support
-Summary(pl):	KOffice - wsparcie dla j陑yka ukrai駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka ukrai艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Ukrainian
@@ -940,12 +940,12 @@ Obsoletes:	koffice-i18n-Ukrainian
 %description Ukrainian
 KOffice suite - Ukrainian language support.
 
-%description Ukrainian -l pl
-KOffice - wsparcie dla j陑yka ukrai駍kiego.
+%description Ukrainian -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka ukrai艅skiego.
 
 %package Uzbek
 Summary:	KOffice suite - Uzbek language support
-Summary(pl):	KOffice - wsparcie dla j陑yka uzbeckiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka uzbeckiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Uzbek
@@ -953,12 +953,12 @@ Obsoletes:	koffice-i18n-Uzbek
 %description Uzbek
 KOffice suite - Uzbek language support.
 
-%description Uzbek -l pl
-KOffice - wsparcie dla j陑yka uzbeckiego.
+%description Uzbek -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka uzbeckiego.
 
 %package Venda
 Summary:	KOffice suite - Venda language support
-Summary(pl):	KOffice - wsparcie dla j陑yka venda
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka venda
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Venda
@@ -966,12 +966,12 @@ Obsoletes:	koffice-i18n-Venda
 %description Venda
 KOffice suite - Venda language support.
 
-%description Venda -l pl
-KOffice - wsparcie dla j陑yka venda.
+%description Venda -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka venda.
 
 %package Vietnamese
 Summary:	KOffice suite - Vietnamese language support
-Summary(pl):	KOffice - wsparcie dla j陑yka wietnamskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka wietnamskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Vietnamese
@@ -979,12 +979,12 @@ Obsoletes:	koffice-i18n-Vietnamese
 %description Vietnamese
 KOffice suite - Vietnamese language support.
 
-%description Vietnamese -l pl
-KOffice - wsparcie dla j陑yka wietnamskiego.
+%description Vietnamese -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka wietnamskiego.
 
 %package Walloon
 Summary:	KOffice suite - Walloon language support
-Summary(pl):	KOffice - wsparcie dla j陑yka walo駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka walo艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Walloon
@@ -992,12 +992,12 @@ Obsoletes:	koffice-i18n-Walloon
 %description Walloon
 KOffice suite - Walloon language support.
 
-%description Walloon -l pl
-KOffice - wsparcie dla j陑yka walo駍kiego.
+%description Walloon -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka walo艅skiego.
 
 %package Xhosa
 Summary:	KOffice suite - Xhosa language support
-Summary(pl):	KOffice - wsparcie dla j陑yka khosa
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka khosa
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Xhosa
@@ -1005,12 +1005,12 @@ Obsoletes:	koffice-i18n-Xhosa
 %description Xhosa
 KOffice suite - Xhosa language support.
 
-%description Xhosa -l pl
-KOffice - wsparcie dla j陑yka khosa.
+%description Xhosa -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka khosa.
 
 %package Simplified_Chinese
 Summary:	KOffice suite - simplified Chinese language support
-Summary(pl):	KOffice - wsparcie dla uproszczonego j陑yka chi駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla uproszczonego j臋zyka chi艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Simplified_Chinese
@@ -1018,12 +1018,12 @@ Obsoletes:	koffice-i18n-Simplified_Chinese
 %description Simplified_Chinese
 KOffice suite - simplified Chinese language support.
 
-%description Simplified_Chinese -l pl
-KOffice - wsparcie dla uproszczonego j陑yka chi駍kiego.
+%description Simplified_Chinese -l pl.UTF-8
+KOffice - wsparcie dla uproszczonego j臋zyka chi艅skiego.
 
 %package Chinese
 Summary:	KOffice suite - Chinese language support
-Summary(pl):	KOffice - wsparcie dla j陑yka chi駍kiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka chi艅skiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Chinese
@@ -1031,12 +1031,12 @@ Obsoletes:	koffice-i18n-Chinese
 %description Chinese
 KOffice suite - Chinese language support.
 
-%description Chinese -l pl
-KOffice - wsparcie dla j陑yka chi駍kiego.
+%description Chinese -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka chi艅skiego.
 
 %package Zulu
 Summary:	KOffice suite - Zulu language support
-Summary(pl):	KOffice - wsparcie dla j陑yka zuluskiego
+Summary(pl.UTF-8):   KOffice - wsparcie dla j臋zyka zuluskiego
 Group:		X11/Applications
 Requires:	%{name}-base = %{version}-%{release}
 Obsoletes:	koffice-i18n-Zulu
@@ -1044,8 +1044,8 @@ Obsoletes:	koffice-i18n-Zulu
 %description Zulu
 KOffice suite - Zulu language support.
 
-%description Zulu -l pl
-KOffice - wsparcie dla j陑yka zuluskiego.
+%description Zulu -l pl.UTF-8
+KOffice - wsparcie dla j臋zyka zuluskiego.
 
 %prep
 %setup -q -c -T %(seq -f '-a %g' 0 34 | egrep -v '^-a (0|16|25|26)$' | xargs)
