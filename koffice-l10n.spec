@@ -1,88 +1,83 @@
-# TODO
-# - missing:
-# - koffice-bg-1.6.0.tar.bz2
-# - koffice-nn-1.6.0.tar.bz2
-# - koffice-ta-1.6.0.tar.bz2
-# - koffice-tg-1.6.0.tar.bz2
-# - broken: es
 %define	koffice_epoch	5
 Summary:	KOffice suite - international support
 Summary(pl):	KOffice - wsparcie dla wielu jêzyków
 Name:		koffice-l10n
-Version:	1.6.1
-Release:	1
+Version:	1.6.2
+Release:	2
 License:	GPL
 Group:		X11/Applications
-#Source0:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-bg-%{version}.tar.bz2
-##Source0-md5:	8daaeb614b3439490c2dd64a5ca6a90d
-Source1:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ca-%{version}.tar.bz2
-# Source1-md5:	2af9ee48900b76f13c7b205f9f44e454
-Source2:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-cs-%{version}.tar.bz2
-# Source2-md5:	a90d191f1d84bd5c8090ca6e004253c4
-Source3:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-cy-%{version}.tar.bz2
-# Source3-md5:	4f5d6aef468aeb4b80c6b079e1399110
-Source4:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-da-%{version}.tar.bz2
-# Source4-md5:	34ac13ce5bf8452f5f8b44686d03781a
-Source5:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-de-%{version}.tar.bz2
-# Source5-md5:	9ec1030ec8f55b4689a4664a3032050d
-Source6:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-el-%{version}.tar.bz2
-# Source6-md5:	c2028907c0675534694b5bad4c85ac0f
-Source7:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-en_GB-%{version}.tar.bz2
-# Source7-md5:	0c8edcc2fb6570ff7629e610580cac2f
-Source8:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-es-%{version}.tar.bz2
-# Source8-md5:	e3095320b087fdbaf9dea4ca7384c4e7
-Source9:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-et-%{version}.tar.bz2
-# Source9-md5:	d7e32d741c284880ff01530d956cd524
-Source28:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-eu-%{version}.tar.bz2
-# Source28-md5:	33bb005893d82eeebbc1dc62495e018a
-Source10:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-fi-%{version}.tar.bz2
-# Source10-md5:	dc0b99fe0b1c2f0bdc5823804cf5f7f7
-Source11:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-fr-%{version}.tar.bz2
-# Source11-md5:	74a658f3f323f016b202cc4e2063da19
-Source12:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-hu-%{version}.tar.bz2
-# Source12-md5:	406eef87386bea965c9d0ec224b0a6aa
-Source13:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-it-%{version}.tar.bz2
-# Source13-md5:	5fc389a6885af2acce7e5b9b48a9ce12
-Source29:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ja-%{version}.tar.bz2
-# Source29-md5:	39ba5b3618221ee6fa896aa16aa9f6a9
-Source30:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-lv-%{version}.tar.bz2
-# Source30-md5:	512650fbc0638ac0f0bae2864f295cca
-Source31:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ms-%{version}.tar.bz2
-# Source31-md5:	ff1d6abe79bf4b4239ebaccc2509c35e
-Source14:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-nb-%{version}.tar.bz2
-# Source14-md5:	65d3a4d15e8911faf43d1aa9c6f7b6a7
-Source15:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-nl-%{version}.tar.bz2
-# Source15-md5:	006bc0ff8b292fc8836c989d244a45bc
-#Source16:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-nn-%{version}.tar.bz2
-##Source16-md5:	12a451ca1384c776045a86aa3f0fecb5
-Source17:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-pl-%{version}.tar.bz2
-# Source17-md5:	ca6e0bd7de872e51f342cd153598981b
-Source18:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-pt-%{version}.tar.bz2
-# Source18-md5:	c4e59783b4b93a50c7e5e9b53c864caa
-Source19:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-pt_BR-%{version}.tar.bz2
-# Source19-md5:	71efdf80a256b20baece5e58f2d4527a
-Source20:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ru-%{version}.tar.bz2
-# Source20-md5:	d72bb7ce7fe685c4c92940dca4cf4bf8
-Source32:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sk-%{version}.tar.bz2
-# Source32-md5:	63b2d698040b2f5ece72e7ca67407669
-Source21:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sl-%{version}.tar.bz2
-# Source21-md5:	0c40d723b64bf15fbb8c78ebce17dcb3
-Source22:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sr-%{version}.tar.bz2
-# Source22-md5:	ff1137b214460cfc6c647643da08e098
-Source23:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sr@Latn-%{version}.tar.bz2
-# Source23-md5:	ed4eab803a7c0443ff3c4839e32757d1
-Source24:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sv-%{version}.tar.bz2
-# Source24-md5:	fd5ebf8d8480797f84121f9efcb00823
-#Source25:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ta-%{version}.tar.bz2
-##Source25-md5:	536e66f3b85923771f2af964b51a465e
-#Source26:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-tg-%{version}.tar.bz2
-##Source26-md5:	a38ec98b0f6437ddb93196f369a09485
-Source33:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-tr-%{version}.tar.bz2
-# Source33-md5:	909ed845836e7219a4cf6710ee128846
-Source27:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-zh_CN-%{version}.tar.bz2
-# Source27-md5:	055cf1eed59bc1e491063d4ffa883d9b
-Source34:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-zh_TW-%{version}.tar.bz2
-# Source34-md5:	230b02b893873f1fd55f002509549793
+Source0:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ca-%{version}.tar.bz2
+# Source0-md5:	8809746f5856aa7c2b37583425501ea7
+Source1:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-cs-%{version}.tar.bz2
+# Source1-md5:	2b7eb0aa4a3e21048d073b414cbca26e
+Source2:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-cy-%{version}.tar.bz2
+# Source2-md5:	8d731dd80ebeb2d89263a3884c0fef44
+Source3:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-da-%{version}.tar.bz2
+# Source3-md5:	ed57736b883215dce9d8cf6985d70fe2
+Source4:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-de-%{version}.tar.bz2
+# Source4-md5:	3cf83fceb1caff5ba1c5bcad31a7df81
+Source5:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-el-%{version}.tar.bz2
+# Source5-md5:	239ea87f98dc701cc8b4b6b1ef1372b9
+Source6:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-en_GB-%{version}.tar.bz2
+# Source6-md5:	445f7990c5ecb9118cbe3c7d68c74654
+Source7:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-es-%{version}.tar.bz2
+# Source7-md5:	d10222e3c617f73327db7eee522ce753
+Source8:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-et-%{version}.tar.bz2
+# Source8-md5:	e7a4017b8db71204650c44bc72cd9500
+Source9:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-eu-%{version}.tar.bz2
+# Source9-md5:	78244fb0777c69433dbc406bd2d5d0cc
+Source10:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-fa-%{version}.tar.bz2
+# Source10-md5:	c210ae6ee1dac06f0858a73183db22b6
+Source11:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-fi-%{version}.tar.bz2
+# Source11-md5:	1d3904967d3a8be1616dc0c215f4e196
+Source12:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-fr-%{version}.tar.bz2
+# Source12-md5:	9e16d5bd9d6cf7eaf63ef06ba36053e1
+Source13:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ga-%{version}.tar.bz2
+# Source13-md5:	721f0ae5b438ffba3e2b48b442bb4329
+Source14:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-gl-%{version}.tar.bz2
+# Source14-md5:	ab7b69562abe5d66618aa1d03296ebaa
+Source15:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-hu-%{version}.tar.bz2
+# Source15-md5:	6e5789a140283e98e3240cc1ca516ce8
+Source16:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-it-%{version}.tar.bz2
+# Source16-md5:	91b2df95b845fa9aabbe33a9af8e37f9
+Source17:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ja-%{version}.tar.bz2
+# Source17-md5:	d77a310c8563318dc4ced31c9fe2f2ce
+Source18:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-km-%{version}.tar.bz2
+# Source18-md5:	a199933f40e29a3fe05c4cfd52525479
+Source19:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-lv-%{version}.tar.bz2
+# Source19-md5:	7e1938aa7dfef401759122bdbd54c98d
+Source20:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ms-%{version}.tar.bz2
+# Source20-md5:	dbe0339a7d7bf8626e4ea7ccc8ef5c1b
+Source21:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-nb-%{version}.tar.bz2
+# Source21-md5:	72578347facd96247c52d48ccbbf1f0b
+Source22:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-nl-%{version}.tar.bz2
+# Source22-md5:	201de20b5285ac1ffccb16e75f1472e7
+Source23:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-pl-%{version}.tar.bz2
+# Source23-md5:	ce121b8c225a6ffd4530b095f1b590e9
+Source24:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-pt-%{version}.tar.bz2
+# Source24-md5:	f8f90316c3aacc6a6c9150d1241a808d
+Source25:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-pt_BR-%{version}.tar.bz2
+# Source25-md5:	2502c7ad3f66da2d51b643531acde224
+Source26:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ru-%{version}.tar.bz2
+# Source26-md5:	0fc0f3c8942acc6c4f87ee37e76f48f8
+Source27:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sk-%{version}.tar.bz2
+# Source27-md5:	8f151c52c09db40849cd67bcc11cb447
+Source28:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sl-%{version}.tar.bz2
+# Source28-md5:	0e12b6670b31a089c054b9b7370ba4d3
+Source29:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sr-%{version}.tar.bz2
+# Source29-md5:	94fb0ca00bd2f089db2854413316fe87
+Source30:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sr@Latn-%{version}.tar.bz2
+# Source30-md5:	93f0ba1b6b54d677a354806f0e204fe5
+Source31:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-sv-%{version}.tar.bz2
+# Source31-md5:	f63e6deda90f6bc1f10985c5e7971add
+Source32:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-tr-%{version}.tar.bz2
+# Source32-md5:	a17e9f38819b242b9019b92412b2d22f
+Source33:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-uk-%{version}.tar.bz2
+# Source33-md5:	983b0509583a7aa08684310f6d4133a4
+Source34:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-zh_CN-%{version}.tar.bz2
+# Source34-md5:	64e8c0cac900d22d4a1cc04c9be160af
+Source35:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-zh_TW-%{version}.tar.bz2
+# Source35-md5:	bc25552d0a21146b542bc764c1fed5a1
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs-devel >= 9:3.2
@@ -117,7 +112,6 @@ Obsoletes:	koffice-l10n-Afrikaans
 Obsoletes:	koffice-l10n-Breton
 Obsoletes:	koffice-l10n-Bulgarian
 Obsoletes:	koffice-l10n-Esperanto
-Obsoletes:	koffice-l10n-Farsi
 Obsoletes:	koffice-l10n-Hebrew
 Obsoletes:	koffice-l10n-Lao
 Obsoletes:	koffice-l10n-Maltese
@@ -552,6 +546,18 @@ KOffice suite - Japanese language support.
 
 %description Japanese -l pl
 KOffice - wsparcie dla jêzyka japoñskiego.
+
+%package Khmer
+Summary:	KOffice suite - Khmer language support
+Summary(pl):	KOffice - wsparcie dla jêzyka khmerskiego
+Group:		X11/Applications
+Requires:	%{name}-base = %{version}-%{release}
+
+%description Khmer
+KOffice Suite - Khmer language support.
+
+%description Khmer -l pl
+KOffice - wsparcie dla jêzyka khmerskiego.
 
 %package Korean
 Summary:	KOffice suite - Korean language support
@@ -1048,10 +1054,7 @@ KOffice suite - Zulu language support.
 KOffice - wsparcie dla jêzyka zuluskiego.
 
 %prep
-%setup -q -c -T %(seq -f '-a %g' 0 34 | egrep -v '^-a (0|16|25|26)$' | xargs)
-
-# broken
-rm -rf koffice-l10n-es-*
+%setup -q -c -T %(seq -f '-a %g' 0 35 | xargs)
 
 %build
 for dir in %{name}-*-%{version}; do
@@ -1082,32 +1085,25 @@ fi
 rm -f *.lang
 
 FindLang() {
-#    $1 - short language name
-#    $2 - long language name
+	#    $1 - short language name
 	local lang="$1"
-	local language="$2"
 
-	> "$language.lang"
-
-# share/doc/kde/HTML/(%%lang)
+	# share/doc/kde/HTML/(%%lang)
     if [ -d "$RPM_BUILD_ROOT%{_kdedocdir}/$lang" ]; then
-		echo "%lang($lang) %{_kdedocdir}/$lang" >> "$language.lang"
+		echo "%lang($lang) %{_kdedocdir}/$lang"
     fi
 
-# share/locale/(%%lang)
+	# share/locale/(%%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$lang" ]; then
-		echo "%lang($lang) %{_datadir}/locale/$lang/LC_MESSAGES/*.mo" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/locale/$lang/LC_MESSAGES/*.mo"
 	fi
 
-# share/apps/koffice/autocorrect/*.xml
+	# share/apps/koffice/autocorrect/*.xml
 	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/$lang.xml" ]; then
-		echo "%lang($lang) %{_datadir}/apps/koffice/autocorrect/$lang.xml" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/apps/koffice/autocorrect/$lang.xml"
 	fi
 
-	if [ ! -s $language.lang ]; then
-		echo >&2 "Missing launguage: $language ($lang)"
-		exit 1
-	fi
+	touch $lang.ok
 }
 
 ziew="\
@@ -1127,87 +1123,97 @@ for i in $ziew; do
 	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/$i
 done
 
-#FindLang af Afrikaans
-#FindLang ar Arabic
-#FindLang az Azerbaijani
-#FindLang bg Bulgarian
-#FindLang br Breton
-#FindLang bs Bosnian
-FindLang ca Catalan
-FindLang cs Czech
-FindLang cy Cymraeg
-FindLang da Danish
-FindLang de German
-FindLang el Greek
-#FindLang en English
-FindLang en_GB English_UK
-#FindLang eo Esperanto
-#FindLang es Spanish
-FindLang et Estonian
-FindLang eu Basque
-#FindLang fa Farsi
-FindLang fi Finnish
-FindLang fr French
-#FindLang ga Irish
-#FindLang gl Galician
-#FindLang he Hebrew
-#FindLang hsb Upper_Sorbian
-#FindLang hi Hindi
-#FindLang hr Croatian
-FindLang hu Hungarian
-#FindLang id Indonesian
-#FindLang is Icelandic
-FindLang it Italian
-FindLang ja Japanese
-#FindLang ko Korean
-#FindLang lt Lithuanian
-#FindLang lo Lao
-FindLang lv Latvian
-#FindLang mi Maori
-#FindLang mk Macedonian
-#FindLang mn Mongolian
-FindLang ms Malay
-#FindLang mt Maltese
-FindLang nb Norwegian_Bokmaal
-FindLang nl Dutch
-#FindLang nn Norwegian_Nynorsk
-#FindLang nso Northern_Sotho
-#FindLang oc Gascon_occitan
-FindLang pl Polish
-FindLang pt Portuguese
-FindLang pt_BR Brazil_Portuguese
-#FindLang ro Romanian
-FindLang ru Russian
-#FindLang ss Swati
-#FindLang se Northern_Sami
-FindLang sk Slovak
-FindLang sl Slovenian
-FindLang sr Serbian
-FindLang sr@Latn Serbian_Latin
+#FindLang af > Afrikaans.lang
+#FindLang ar > Arabic.lang
+#FindLang az > Azerbaijani.lang
+#FindLang bg > Bulgarian.lang
+#FindLang br > Breton.lang
+#FindLang bs > Bosnian.lang
+FindLang ca > Catalan.lang
+FindLang cs > Czech.lang
+FindLang cy > Cymraeg.lang
+FindLang da > Danish.lang
+FindLang de > German.lang
+FindLang el > Greek.lang
+#FindLang en > English.lang
+FindLang en_GB > English_UK.lang
+#FindLang eo > Esperanto.lang
+FindLang es > Spanish.lang
+FindLang et > Estonian.lang
+FindLang eu > Basque.lang
+FindLang fa > Farsi.lang
+FindLang fi > Finnish.lang
+FindLang fr > French.lang
+FindLang ga > Irish.lang
+FindLang gl > Galician.lang
+#FindLang he > Hebrew.lang
+#FindLang hsb > Upper_Sorbian.lang
+#FindLang hi > Hindi.lang
+#FindLang hr > Croatian.lang
+FindLang hu > Hungarian.lang
+#FindLang id > Indonesian.lang
+#FindLang is > Icelandic.lang
+FindLang it > Italian.lang
+FindLang ja > Japanese.lang
+FindLang km > Khmer.lang
+#FindLang ko > Korean.lang
+#FindLang lt > Lithuanian.lang
+#FindLang lo > Lao.lang
+FindLang lv > Latvian.lang
+#FindLang mi > Maori.lang
+#FindLang mk > Macedonian.lang
+#FindLang mn > Mongolian.lang
+FindLang ms > Malay.lang
+#FindLang mt > Maltese.lang
+FindLang nb > Norwegian_Bokmaal.lang
+FindLang nl > Dutch.lang
+#FindLang nn > Norwegian_Nynorsk.lang
+#FindLang nso > Northern_Sotho.lang
+#FindLang oc > Gascon_occitan.lang
+FindLang pl > Polish.lang
+FindLang pt > Portuguese.lang
+FindLang pt_BR > Brazil_Portuguese.lang
+#FindLang ro > Romanian.alng
+FindLang ru > Russian.lang
+#FindLang ss > Swati.lang
+#FindLang se > Northern_Sami.lang
+FindLang sk > Slovak.lang
+FindLang sl > Slovenian.lang
+FindLang sr > Serbian.lang
+FindLang sr@Latn > Serbian_Latin.lang
 cat Serbian_Latin.lang >> Serbian.lang
 rm -f Serbian_Latin.lang
-FindLang sv Swedish
-#FindLang ta Tamil
-#FindLang tg Tajik
-#FindLang th Thai
-FindLang tr Turkish
-#FindLang uk Ukrainian
-#FindLang uz Uzbek
-#FindLang ve Venda
-#FindLang vi Vietnamese
-#FindLang wa Walloon
-#FindLang xh Xhosa
-FindLang zh_CN Simplified_Chinese
-FindLang zh_TW Chinese
-#FindLang zu Zulu
+FindLang sv > Swedish.lang
+#FindLang ta > Tamil.lang
+#FindLang tg > Tajik.lang
+#FindLang th > Thai.lang
+FindLang tr > Turkish.lang
+FindLang uk > Ukrainian.lang
+#FindLang uz > Uzbek.lang
+#FindLang ve > Venda.lang
+#FindLang vi > Vietnamese.lang
+#FindLang wa > Walloon.lang
+#FindLang xh > Xhosa.lang
+FindLang zh_CN > Simplified_Chinese.lang
+FindLang zh_TW > Chinese.lang
+#FindLang zu > Zulu.lang
 
-# we ignore dialects (currently sr@Latn is the only case)
-dirs=$(ls -1d %{name}-*-%{version} | %{__sed} '/@/d' | wc -l)
-langs=$(echo *.lang | wc -w)
-if [ $dirs != $langs ]; then
-	echo >&2 "Not all languages processed! Dirs: $dirs, Langs: $langs"
-	exit 1
-fi
+check_installed_languages() {
+	err=0
+	# we ignore dialects (currently sr@Latn is the only case)
+	for a in $(ls -1d %{name}-*-%{version} | %{__sed} '/@/d'); do
+		l=${a#%{name}-}
+		l=${l%%-%{version}}
+		if [ ! -f $l.ok ]; then
+			echo >&2 "language $l not processed"
+			err=1
+		fi
+	done
+	if [ "$err" = 1 ]; then
+		exit 1
+	fi
+}
+check_installed_languages
 
 %clean
 check_installed_files() {
@@ -1222,8 +1228,7 @@ check_installed_files() {
 	done
 }
 check_installed_files
-
-rm -rf $RPM_BUILD_ROOT
+%{!?debug:rm -rf $RPM_BUILD_ROOT}
 
 %files base
 %defattr(644,root,root,755)
@@ -1268,8 +1273,8 @@ rm -rf $RPM_BUILD_ROOT
 #%files -f Esperanto.lang Esperanto
 #%defattr(644,root,root,755)
 
-#%files -f Spanish.lang Spanish
-#%defattr(644,root,root,755)
+%files -f Spanish.lang Spanish
+%defattr(644,root,root,755)
 
 %files -f Estonian.lang Estonian
 %defattr(644,root,root,755)
@@ -1277,8 +1282,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Basque.lang Basque
 %defattr(644,root,root,755)
 
-#%files -f Farsi.lang Farsi
-#%defattr(644,root,root,755)
+%files -f Farsi.lang Farsi
+%defattr(644,root,root,755)
 
 %files -f Finnish.lang Finnish
 %defattr(644,root,root,755)
@@ -1286,8 +1291,12 @@ rm -rf $RPM_BUILD_ROOT
 %files -f French.lang French
 %defattr(644,root,root,755)
 
-# %files -f Irish.lang Irish
-##%files -f Galician.lang Galician
+%files -f Irish.lang Irish
+%defattr(644,root,root,755)
+
+%files -f Galician.lang Galician
+%defattr(644,root,root,755)
+
 ##%files -f Hindi.lang Hindi
 
 #%files -f Hebrew.lang Hebrew
@@ -1308,6 +1317,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 
 %files -f Japanese.lang Japanese
+%defattr(644,root,root,755)
+
+%files -f Khmer.lang Khmer
 %defattr(644,root,root,755)
 
 ##%files -f Korean.lang Korean
@@ -1385,7 +1397,8 @@ rm -rf $RPM_BUILD_ROOT
 %files -f Turkish.lang Turkish
 %defattr(644,root,root,755)
 
-##%files -f Ukrainian.lang Ukrainian
+%files -f Ukrainian.lang Ukrainian
+%defattr(644,root,root,755)
 ##%files -f Uzbek.lang Uzbek
 
 #%files -f Venda.lang Venda
