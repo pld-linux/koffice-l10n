@@ -3,7 +3,7 @@ Summary:	KOffice suite - international support
 Summary(pl.UTF-8):	KOffice - wsparcie dla wielu języków
 Name:		koffice-l10n
 Version:	1.6.2
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-ca-%{version}.tar.bz2
