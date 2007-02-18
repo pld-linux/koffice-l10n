@@ -1085,32 +1085,25 @@ fi
 rm -f *.lang
 
 FindLang() {
-#    $1 - short language name
-#    $2 - long language name
+	#    $1 - short language name
 	local lang="$1"
-	local language="$2"
 
-	> "$language.lang"
-
-# share/doc/kde/HTML/(%%lang)
+	# share/doc/kde/HTML/(%%lang)
     if [ -d "$RPM_BUILD_ROOT%{_kdedocdir}/$lang" ]; then
-		echo "%lang($lang) %{_kdedocdir}/$lang" >> "$language.lang"
+		echo "%lang($lang) %{_kdedocdir}/$lang"
     fi
 
-# share/locale/(%%lang)
+	# share/locale/(%%lang)
 	if [ -d "$RPM_BUILD_ROOT%{_datadir}/locale/$lang" ]; then
-		echo "%lang($lang) %{_datadir}/locale/$lang/LC_MESSAGES/*.mo" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/locale/$lang/LC_MESSAGES/*.mo"
 	fi
 
-# share/apps/koffice/autocorrect/*.xml
+	# share/apps/koffice/autocorrect/*.xml
 	if [ -f "$RPM_BUILD_ROOT%{_datadir}/apps/koffice/autocorrect/$lang.xml" ]; then
-		echo "%lang($lang) %{_datadir}/apps/koffice/autocorrect/$lang.xml" >> "$language.lang"
+		echo "%lang($lang) %{_datadir}/apps/koffice/autocorrect/$lang.xml"
 	fi
 
-	if [ ! -s $language.lang ]; then
-		echo >&2 "Missing launguage: $language ($lang)"
-		exit 1
-	fi
+	touch $lang.ok
 }
 
 ziew="\
@@ -1130,88 +1123,97 @@ for i in $ziew; do
 	rm -rf $RPM_BUILD_ROOT%{_kdedocdir}/$i
 done
 
-#FindLang af Afrikaans
-#FindLang ar Arabic
-#FindLang az Azerbaijani
-#FindLang bg Bulgarian
-#FindLang br Breton
-#FindLang bs Bosnian
-FindLang ca Catalan
-FindLang cs Czech
-FindLang cy Cymraeg
-FindLang da Danish
-FindLang de German
-FindLang el Greek
-#FindLang en English
-FindLang en_GB English_UK
-#FindLang eo Esperanto
-#FindLang es Spanish
-FindLang et Estonian
-FindLang eu Basque
-FindLang fa Farsi
-FindLang fi Finnish
-FindLang fr French
-FindLang ga Irish
-FindLang gl Galician
-#FindLang he Hebrew
-#FindLang hsb Upper_Sorbian
-#FindLang hi Hindi
-#FindLang hr Croatian
-FindLang hu Hungarian
-#FindLang id Indonesian
-#FindLang is Icelandic
-FindLang it Italian
-FindLang ja Japanese
-FindLang km Khmer
-#FindLang ko Korean
-#FindLang lt Lithuanian
-#FindLang lo Lao
-FindLang lv Latvian
-#FindLang mi Maori
-#FindLang mk Macedonian
-#FindLang mn Mongolian
-FindLang ms Malay
-#FindLang mt Maltese
-FindLang nb Norwegian_Bokmaal
-FindLang nl Dutch
-#FindLang nn Norwegian_Nynorsk
-#FindLang nso Northern_Sotho
-#FindLang oc Gascon_occitan
-FindLang pl Polish
-FindLang pt Portuguese
-FindLang pt_BR Brazil_Portuguese
-#FindLang ro Romanian
-FindLang ru Russian
-#FindLang ss Swati
-#FindLang se Northern_Sami
-FindLang sk Slovak
-FindLang sl Slovenian
-FindLang sr Serbian
-FindLang sr@Latn Serbian_Latin
+#FindLang af > Afrikaans.lang
+#FindLang ar > Arabic.lang
+#FindLang az > Azerbaijani.lang
+#FindLang bg > Bulgarian.lang
+#FindLang br > Breton.lang
+#FindLang bs > Bosnian.lang
+FindLang ca > Catalan.lang
+FindLang cs > Czech.lang
+FindLang cy > Cymraeg.lang
+FindLang da > Danish.lang
+FindLang de > German.lang
+FindLang el > Greek.lang
+#FindLang en > English.lang
+FindLang en_GB > English_UK.lang
+#FindLang eo > Esperanto.lang
+FindLang es > Spanish.lang
+FindLang et > Estonian.lang
+FindLang eu > Basque.lang
+FindLang fa > Farsi.lang
+FindLang fi > Finnish.lang
+FindLang fr > French.lang
+FindLang ga > Irish.lang
+FindLang gl > Galician.lang
+#FindLang he > Hebrew.lang
+#FindLang hsb > Upper_Sorbian.lang
+#FindLang hi > Hindi.lang
+#FindLang hr > Croatian.lang
+FindLang hu > Hungarian.lang
+#FindLang id > Indonesian.lang
+#FindLang is > Icelandic.lang
+FindLang it > Italian.lang
+FindLang ja > Japanese.lang
+FindLang km > Khmer.lang
+#FindLang ko > Korean.lang
+#FindLang lt > Lithuanian.lang
+#FindLang lo > Lao.lang
+FindLang lv > Latvian.lang
+#FindLang mi > Maori.lang
+#FindLang mk > Macedonian.lang
+#FindLang mn > Mongolian.lang
+FindLang ms > Malay.lang
+#FindLang mt > Maltese.lang
+FindLang nb > Norwegian_Bokmaal.lang
+FindLang nl > Dutch.lang
+#FindLang nn > Norwegian_Nynorsk.lang
+#FindLang nso > Northern_Sotho.lang
+#FindLang oc > Gascon_occitan.lang
+FindLang pl > Polish.lang
+FindLang pt > Portuguese.lang
+FindLang pt_BR > Brazil_Portuguese.lang
+#FindLang ro > Romanian.alng
+FindLang ru > Russian.lang
+#FindLang ss > Swati.lang
+#FindLang se > Northern_Sami.lang
+FindLang sk > Slovak.lang
+FindLang sl > Slovenian.lang
+FindLang sr > Serbian.lang
+FindLang sr@Latn > Serbian_Latin.lang
 cat Serbian_Latin.lang >> Serbian.lang
 rm -f Serbian_Latin.lang
-FindLang sv Swedish
-#FindLang ta Tamil
-#FindLang tg Tajik
-#FindLang th Thai
-FindLang tr Turkish
-FindLang uk Ukrainian
-#FindLang uz Uzbek
-#FindLang ve Venda
-#FindLang vi Vietnamese
-#FindLang wa Walloon
-#FindLang xh Xhosa
-FindLang zh_CN Simplified_Chinese
-FindLang zh_TW Chinese
-#FindLang zu Zulu
+FindLang sv > Swedish.lang
+#FindLang ta > Tamil.lang
+#FindLang tg > Tajik.lang
+#FindLang th > Thai.lang
+FindLang tr > Turkish.lang
+FindLang uk > Ukrainian.lang
+#FindLang uz > Uzbek.lang
+#FindLang ve > Venda.lang
+#FindLang vi > Vietnamese.lang
+#FindLang wa > Walloon.lang
+#FindLang xh > Xhosa.lang
+FindLang zh_CN > Simplified_Chinese.lang
+FindLang zh_TW > Chinese.lang
+#FindLang zu > Zulu.lang
 
-# we ignore dialects (currently sr@Latn is the only case)
-dirs=$(ls -1d %{name}-*-%{version} | %{__sed} '/@/d' | wc -l)
-langs=$(echo *.lang | wc -w)
-if [ $dirs != $langs ]; then
-	echo >&2 "Not all languages processed! Dirs: $dirs, Langs: $langs"
-	exit 1
-fi
+check_installed_languages() {
+	err=0
+	# we ignore dialects (currently sr@Latn is the only case)
+	for a in $(ls -1d %{name}-*-%{version} | %{__sed} '/@/d'); do
+		l=${a#%{name}-}
+		l=${l%%-%{version}}
+		if [ ! -f $l.ok ]; then
+			echo >&2 "language $l not processed"
+			err=1
+		fi
+	done
+	if [ "$err" = 1 ]; then
+		exit 1
+	fi
+}
+check_installed_languages
 
 %clean
 check_installed_files() {
@@ -1226,8 +1228,7 @@ check_installed_files() {
 	done
 }
 check_installed_files
-
-rm -rf $RPM_BUILD_ROOT
+%{!?debug:rm -rf $RPM_BUILD_ROOT}
 
 %files base
 %defattr(644,root,root,755)
@@ -1272,8 +1273,8 @@ rm -rf $RPM_BUILD_ROOT
 #%files -f Esperanto.lang Esperanto
 #%defattr(644,root,root,755)
 
-#%files -f Spanish.lang Spanish
-#%defattr(644,root,root,755)
+%files -f Spanish.lang Spanish
+%defattr(644,root,root,755)
 
 %files -f Estonian.lang Estonian
 %defattr(644,root,root,755)
@@ -1291,8 +1292,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 
 %files -f Irish.lang Irish
+%defattr(644,root,root,755)
 
 %files -f Galician.lang Galician
+%defattr(644,root,root,755)
 
 ##%files -f Hindi.lang Hindi
 
@@ -1395,6 +1398,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 
 %files -f Ukrainian.lang Ukrainian
+%defattr(644,root,root,755)
 ##%files -f Uzbek.lang Uzbek
 
 #%files -f Venda.lang Venda
