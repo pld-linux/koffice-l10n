@@ -10,7 +10,7 @@ Summary:	KOffice suite - international support
 Summary(pl.UTF-8):	KOffice - wsparcie dla wielu języków
 Name:		koffice-l10n
 Version:	1.6.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-bg-%{version}.tar.bz2
@@ -91,6 +91,7 @@ Source37:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%
 # Source37-md5:	a21490ebc1d0beedc565c070d4bdad25
 Source38:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-zh_TW-%{version}.tar.bz2
 # Source38-md5:	7c7c3787a45743ae9d06938829381d2e
+Patch0:		koffice-module-l10n-locale-names.patch
 BuildRequires:	gettext-devel
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs-devel >= 9:3.2
@@ -136,6 +137,8 @@ Obsoletes:	koffice-l10n-Thai
 Obsoletes:	koffice-l10n-Upper_Sorbian
 Obsoletes:	koffice-l10n-Xhosa
 Obsoletes:	koffice-l10n-Zulu
+# sr@Latn vs. sr@latin
+Conflicts:	glibc-misc < 6:2.7
 
 %description base
 Empty metapackage to handle obsoletes for individual i18n subpackages.
@@ -1090,6 +1093,7 @@ KOffice - wsparcie dla języka zuluskiego.
 
 %prep
 %setup -q -c -T %(seq -f '-a %g' 0 38 | xargs)
+%patch0 -p1
 
 %build
 for dir in %{name}-*-%{version}; do
@@ -1217,7 +1221,7 @@ FindLang ru > Russian.lang
 FindLang sk > Slovak.lang
 FindLang sl > Slovenian.lang
 FindLang sr > Serbian.lang
-FindLang sr@Latn > Serbian_Latin.lang
+FindLang sr@latin > Serbian_Latin.lang
 cat Serbian_Latin.lang >> Serbian.lang
 rm -f Serbian_Latin.lang
 FindLang sv > Swedish.lang
@@ -1237,7 +1241,7 @@ FindLang zh_TW > Chinese.lang
 
 check_installed_languages() {
 	err=0
-	# we ignore dialects (currently sr@Latn is the only case)
+	# we ignore dialects (currently sr@latin is the only case)
 	for a in $(ls -1d %{name}-*-%{version} | %{__sed} '/@/d'); do
 		l=${a#%{name}-}
 		l=${l%%-%{version}}
