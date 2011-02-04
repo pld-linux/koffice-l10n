@@ -724,8 +724,8 @@ Requires:	%{name}-base = %{version}-%{release}
 %description Nepali
 KOffice suite - Nepali language support.
 
-%description Low_Saxon -l pl.UTF-8
-KOffice - wsparcie dla języka dolnosaksońskiego.
+%description Nepali -l pl.UTF-8
+KOffice - wsparcie dla języka nepalskiego.
 
 %package Norwegian_Bokmaal
 Summary:	KOffice suite - Norwegian (Bokmaal) language support
