@@ -92,7 +92,7 @@ Source37:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%
 Source38:	ftp://ftp.kde.org/pub/kde/stable/koffice-%{version}/src/koffice-l10n/%{name}-zh_TW-%{version}.tar.bz2
 # Source38-md5:	7c7c3787a45743ae9d06938829381d2e
 Patch0:		koffice-module-l10n-locale-names.patch
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 # It creates symlinks to some not-translated files.
 BuildRequires:	kdelibs-devel >= 9:3.2
 BuildRequires:	libxml2-progs >= 2.4.2
