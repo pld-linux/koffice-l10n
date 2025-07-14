@@ -1093,7 +1093,7 @@ KOffice - wsparcie dla języka zuluskiego.
 
 %prep
 %setup -q -c -T %(seq -f '-a %g' 0 38 | xargs)
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 for dir in %{name}-*-%{version}; do
